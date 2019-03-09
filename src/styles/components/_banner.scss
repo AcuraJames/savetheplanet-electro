@@ -1,29 +1,44 @@
-.banner {
-    height: 100vh;
-    padding: 50px 0;
-    text-align: center;
+.container-fluid {
+    background-color: #103c86;
 
-    .header {
-        display: flex;
-        justify-content: center;
-    }
+    .banner {
+        height: 100vh;
+        padding: 50px 0;
+        text-align: center;
+    
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    .tagline {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &__thin {
-            @include light;
-            font-size: 3rem;
-            //color: #fff;
+            img {
+                width: 70%;
+            }
+        }
+    
+        .tagline {
+            height: calc(100% - 65px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            &__thin {
+                @include light;
+                font-size: 3rem;
+                color: #fff;
+            }
+    
+            &__thick {
+                @include extra-bold;
+                font-size: 4rem;
+                color: #a8c000;
+            }
         }
 
-        &__thick {
-            @include extra-bold;
-            font-size: 4rem;
-            color: #a8c000;
+        .hashtag {
+            @include semi-bold;
+            font-size: 0.8rem;
+            color: #fff;
         }
     }
 }
