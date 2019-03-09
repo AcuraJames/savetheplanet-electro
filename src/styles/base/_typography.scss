@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&subset=cyrillic,cyrillic-ext');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin light {
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin semi-bold {
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin extra-bold {
+    font-weight: 800;
+}
+
+@mixin black {
+    font-weight: 900;
+}

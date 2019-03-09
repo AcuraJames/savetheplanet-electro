@@ -1,0 +1,29 @@
+.banner {
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tagline {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__thin {
+            @include light;
+            font-size: 3rem;
+            //color: #fff;
+        }
+
+        &__thick {
+            @include extra-bold;
+            font-size: 4rem;
+            color: #a8c000;
+        }
+    }
+}

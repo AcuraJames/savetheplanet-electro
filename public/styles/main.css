@@ -1,2 +1,38 @@
-h1 {
-  color: red; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 1180px;
+  margin: 0 auto; }
+
+.banner {
+  height: 100vh;
+  padding: 50px 0;
+  text-align: center; }
+  .banner .header {
+    display: flex;
+    justify-content: center; }
+  .banner .tagline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .banner .tagline__thin {
+      font-weight: 300;
+      font-size: 3rem; }
+    .banner .tagline__thick {
+      font-weight: 800;
+      font-size: 4rem;
+      color: #a8c000; }
