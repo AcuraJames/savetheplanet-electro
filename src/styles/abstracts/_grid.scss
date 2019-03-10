@@ -1,0 +1,19 @@
+@mixin grid {
+    min-width: 1180px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+    // .col {
+    //     width: calc(100% / 12);
+    //     height: 200px;
+    //     margin-right: 1rem;
+    //     outline: 1px solid orange;
+        
+    //     &:last-child {
+    //       margin: 0;
+    //     }
+    //   }
+    // }
+}

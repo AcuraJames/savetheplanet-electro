@@ -24,20 +24,20 @@
     
             &__thin {
                 @include light;
-                font-size: 3rem;
+                font-size: 5.1rem;
                 color: #fff;
             }
     
             &__thick {
-                @include extra-bold;
-                font-size: 4rem;
+                @include bold;
+                font-size: 7rem;
                 color: #a8c000;
             }
         }
 
         .hashtag {
             @include semi-bold;
-            font-size: 0.8rem;
+            font-size: 1rem;
             color: #fff;
         }
     }

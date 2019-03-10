@@ -36,13 +36,13 @@ ul {
       justify-content: center; }
       .container-fluid .banner .tagline__thin {
         font-weight: 300;
-        font-size: 3rem;
+        font-size: 5.1rem;
         color: #fff; }
       .container-fluid .banner .tagline__thick {
-        font-weight: 800;
-        font-size: 4rem;
+        font-weight: 700;
+        font-size: 7rem;
         color: #a8c000; }
     .container-fluid .banner .hashtag {
       font-weight: 600;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: #fff; }
