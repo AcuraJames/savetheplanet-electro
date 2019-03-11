@@ -1,5 +1,9 @@
 .container-fluid {
     width: 100%;
+
+    &--damage {
+        background: #fff;
+    }
 }
 
 .container {

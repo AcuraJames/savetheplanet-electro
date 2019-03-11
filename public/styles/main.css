@@ -12,6 +12,8 @@ ul {
 
 .container-fluid {
   width: 100%; }
+  .container-fluid--damage {
+    background: #fff; }
 
 .container {
   width: 1180px;
@@ -36,11 +38,13 @@ ul {
     right: 0;
     z-index: -1; }
   .container-fluid .banner {
-    height: calc(100vh + 100px);
+    max-width: 100%;
+    height: 100vh;
     padding: 50px 0;
     text-align: center; }
     .container-fluid .banner .header {
       height: 50px;
+      margin-bottom: -30px;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -62,23 +66,37 @@ ul {
         color: #a8c000; }
       .container-fluid .banner .tagline .battery-static {
         position: absolute;
-        top: 425px;
+        top: 375px;
         left: 0;
         z-index: 1; }
-    .container-fluid .banner .hashtag {
-      height: 50px;
-      line-height: 75px;
+    .container-fluid .banner .footer {
       font-weight: 600;
+      height: 50px;
+      margin-top: 30px;
       font-size: 1rem;
       color: #fff; }
   .container-fluid #scene {
-    width: 100vw;
     position: relative; }
     .container-fluid #scene .prlx {
-      max-width: 2480px;
+      max-width: 2080px;
       position: absolute;
-      top: -130px; }
+      top: -30px; }
     .container-fluid #scene .left {
-      left: -220px; }
+      left: -250px; }
     .container-fluid #scene .right {
-      right: -2350px; }
+      right: -2250px; }
+
+.damage {
+  width: 1180px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center; }
+  .damage__txt {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 1.5rem; }

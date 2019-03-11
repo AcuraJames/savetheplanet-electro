@@ -1,0 +1,17 @@
+.damage {
+    width: 1180px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    &__txt {
+        width: percentage(10 / 12);
+        margin-left: percentage(1 / 12);
+        @include bold;
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+}

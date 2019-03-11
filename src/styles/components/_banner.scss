@@ -20,12 +20,14 @@
     }
 
     .banner {
-        height: calc(100vh + 100px);
+        max-width: 100%;
+        height: 100vh;
         padding: 50px 0;
         text-align: center;
     
         .header {
             height: 50px;
+            margin-bottom: -30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -57,38 +59,37 @@
 
             .battery-static {
                 position: absolute;
-                top: 425px;
+                top: 375px;
                 left: 0;
                 z-index: 1;
             }
 
         }
 
-        .hashtag {
-            height: 50px;
-            line-height: 75px;
+        .footer {
             @include semi-bold;
+            height: 50px;
+            margin-top: 30px;
             font-size: 1rem;
             color: #fff;
         }
     }
 
     #scene {
-        width: 100vw;
         position: relative;
 
         .prlx {
-            max-width: 2480px;
+            max-width: 2080px;
             position: absolute;
-            top: -130px;
+            top: -30px;
         }
 
         .left {
-            left: -220px;
+            left: -250px;
         }
 
         .right {
-            right: -2350px;
+            right: -2250px;
         }
     }
 }
