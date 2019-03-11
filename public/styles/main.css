@@ -18,12 +18,29 @@ ul {
   margin: 0 auto; }
 
 .container-fluid {
-  background-color: #103c86; }
+  background-color: #103c86;
+  position: relative;
+  overflow: hidden;
+  z-index: -99; }
+  .container-fluid::after {
+    content: "";
+    background-image: url("../../img/bg/earth.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; }
   .container-fluid .banner {
-    height: 100vh;
+    height: calc(100vh + 100px);
     padding: 50px 0;
     text-align: center; }
     .container-fluid .banner .header {
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -33,7 +50,8 @@ ul {
       height: calc(100% - 65px);
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      position: relative; }
       .container-fluid .banner .tagline__thin {
         font-weight: 300;
         font-size: 5.1rem;
@@ -42,7 +60,25 @@ ul {
         font-weight: 700;
         font-size: 7rem;
         color: #a8c000; }
+      .container-fluid .banner .tagline .battery-static {
+        position: absolute;
+        top: 425px;
+        left: 0;
+        z-index: 1; }
     .container-fluid .banner .hashtag {
+      height: 50px;
+      line-height: 75px;
       font-weight: 600;
       font-size: 1rem;
       color: #fff; }
+  .container-fluid #scene {
+    width: 100vw;
+    position: relative; }
+    .container-fluid #scene .prlx {
+      max-width: 2480px;
+      position: absolute;
+      top: -130px; }
+    .container-fluid #scene .left {
+      left: -220px; }
+    .container-fluid #scene .right {
+      right: -2350px; }

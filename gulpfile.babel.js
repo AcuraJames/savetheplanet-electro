@@ -18,7 +18,7 @@ gulp.task('styles', () => {
 
 gulp.task('js', () => {
     return gulp.src('src/js/**/*.js')
-        .pipe(gulp.dest('public/assets/js'))
+        .pipe(gulp.dest('public/js'))
 })
 
 gulp.task('img', () => {
