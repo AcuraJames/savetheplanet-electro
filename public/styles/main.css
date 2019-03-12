@@ -19,12 +19,12 @@ ul {
   width: 1180px;
   margin: 0 auto; }
 
-.container-fluid {
+.container-fluid_bg_space {
   background-color: #103c86;
   position: relative;
   overflow: hidden;
   z-index: -99; }
-  .container-fluid::after {
+  .container-fluid_bg_space::after {
     content: "";
     background-image: url("../../img/bg/earth.png");
     background-position: center center;
@@ -37,66 +37,88 @@ ul {
     bottom: 0;
     right: 0;
     z-index: -1; }
-  .container-fluid .banner {
+  .container-fluid_bg_space .banner {
     max-width: 100%;
     height: 100vh;
     padding: 50px 0;
     text-align: center; }
-    .container-fluid .banner .header {
+    .container-fluid_bg_space .banner .header {
       height: 50px;
       margin-bottom: -30px;
       display: flex;
       justify-content: center;
       align-items: center; }
-      .container-fluid .banner .header img {
+      .container-fluid_bg_space .banner .header img {
         width: 70%; }
-    .container-fluid .banner .tagline {
+    .container-fluid_bg_space .banner .tagline {
       height: calc(100% - 65px);
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative; }
-      .container-fluid .banner .tagline__thin {
+      .container-fluid_bg_space .banner .tagline__thin {
         font-weight: 300;
         font-size: 5.1rem;
         color: #fff; }
-      .container-fluid .banner .tagline__thick {
+      .container-fluid_bg_space .banner .tagline__thick {
         font-weight: 700;
         font-size: 7rem;
         color: #a8c000; }
-      .container-fluid .banner .tagline .battery-static {
+      .container-fluid_bg_space .banner .tagline .battery-static {
         position: absolute;
         top: 375px;
         left: 0;
         z-index: 1; }
-    .container-fluid .banner .footer {
+    .container-fluid_bg_space .banner .footer {
       font-weight: 600;
       height: 50px;
       margin-top: 30px;
       font-size: 1rem;
       color: #fff; }
-  .container-fluid #scene {
+  .container-fluid_bg_space #scene {
     position: relative; }
-    .container-fluid #scene .prlx {
+    .container-fluid_bg_space #scene .prlx {
       max-width: 2080px;
       position: absolute;
       top: -30px; }
-    .container-fluid #scene .left {
+    .container-fluid_bg_space #scene .left {
       left: -250px; }
-    .container-fluid #scene .right {
+    .container-fluid_bg_space #scene .right {
       right: -2250px; }
 
 .damage {
   width: 1180px;
-  height: 400px;
+  height: 550px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center; }
   .damage__txt {
     width: 83.33333%;
     margin-left: 8.33333%;
     font-weight: 700;
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 1.5rem; }
+  .damage__img {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .damage__img div {
+      max-width: 112px; }
+    .damage__img span {
+      font-weight: 800;
+      font-size: 1.5rem; }
+    .damage__img .equals {
+      max-width: 270px;
+      max-height: 100px; }
+    .damage__img .txt {
+      font-weight: 700;
+      font-size: 0.9em; }
+
+.infographic {
+  width: 100%;
+  height: 1352px;
+  background-image: url("../../img/infographic/scheme.png");
+  z-index: 999; }

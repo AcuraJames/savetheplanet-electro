@@ -1,17 +1,43 @@
 .damage {
     width: 1180px;
-    height: 400px;
+    height: 550px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
 
     &__txt {
         width: percentage(10 / 12);
         margin-left: percentage(1 / 12);
         @include bold;
-        font-size: .9rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
+    }
+
+    &__img {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            max-width: 112px;
+        }
+
+        span {
+            @include extra-bold;
+            font-size: 1.5rem;
+        }
+
+        .equals {
+            max-width: 270px;
+            max-height: 100px;
+        }
+
+        .txt {
+            @include bold;
+            font-size: 0.9em;
+        }
     }
 }

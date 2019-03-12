@@ -1,8 +1,27 @@
 .container-fluid {
     width: 100%;
+    background-color: #fff;
 
-    &--damage {
-        background: #fff;
+    &_bg_space {
+        background-color: #103c86;
+        position: relative;
+        overflow: hidden;
+        z-index: -99;
+        
+        &::after {
+            content: "";
+            background-image: url('../../img/bg/earth.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            opacity: 0.3;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
     }
 }
 
