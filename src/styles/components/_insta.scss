@@ -1,0 +1,54 @@
+.insta {
+    margin: 0 auto;
+    padding: 115px 0;
+    text-align: center;
+
+    .title {
+        @include semi-bold;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .hashtag {
+        margin-top: 10px;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+
+    .card-wrapper_insta {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .card-item_insta {
+            width: 280px;
+            margin-bottom: 20px;
+            text-align: left;
+
+            &__photo {
+                min-height: 280px;
+                background-image: url('../../img/points/unicom.png');
+                background-size: cover;
+            }
+
+            &__author {
+                margin: 20px 0;
+                @include semi-bold;
+                font-size: .9rem;
+                color: #fff;
+            }
+
+            &__post {
+                margin-right: 40px;
+                font-size: .8rem;
+                color: #fff;
+            }
+
+            &__small-hashtag {
+                margin-top: 20px;
+                font-size: .75rem;
+                color: #fff;
+            }
+        }
+    }
+}

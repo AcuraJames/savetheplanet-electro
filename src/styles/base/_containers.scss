@@ -28,6 +28,13 @@
         z-index: 0;
         background-color: #103c86;
     }
+
+    &_video {
+        min-height: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .container {

@@ -38,6 +38,11 @@ a {
   .container-fluid_bg_blue {
     z-index: 0;
     background-color: #103c86; }
+  .container-fluid_video {
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .container {
   width: 1180px;
@@ -192,3 +197,47 @@ a {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fff; }
+
+.insta {
+  margin: 0 auto;
+  padding: 115px 0;
+  text-align: center; }
+  .insta .title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff; }
+  .insta .hashtag {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #fff; }
+  .insta .card-wrapper_insta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; }
+    .insta .card-wrapper_insta .card-item_insta {
+      width: 280px;
+      margin-bottom: 20px;
+      text-align: left; }
+      .insta .card-wrapper_insta .card-item_insta__photo {
+        min-height: 280px;
+        background-image: url("../../img/points/unicom.png");
+        background-size: cover; }
+      .insta .card-wrapper_insta .card-item_insta__author {
+        margin: 20px 0;
+        font-weight: 600;
+        font-size: .9rem;
+        color: #fff; }
+      .insta .card-wrapper_insta .card-item_insta__post {
+        margin-right: 40px;
+        font-size: .8rem;
+        color: #fff; }
+      .insta .card-wrapper_insta .card-item_insta__small-hashtag {
+        margin-top: 20px;
+        font-size: .75rem;
+        color: #fff; }
+
+.social {
+  height: 100px;
+  display: flex;
+  border-top: 2px solid #fff;
+  background-color: #103c86; }

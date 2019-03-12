@@ -167,20 +167,60 @@
                 </p>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="video">
-                <iframe src="https://www.youtube.com/watch?v=2lprC0yYeFw" frameborder="0"></iframe>
-            </div>
+        <div class="container-fluid_video">
+            <iframe width="640" height="345" src="https://www.youtube.com/watch?v=2lprC0yYeFw" frameborder="0"></iframe>
         </div>
-        <div class="container-fluid_bg_blue">
-            <div class="container">
-                <div class="card-wrapper">
-                    <div class="card-item">
-                        <div class="card_item__photo"></div>
-                    </div>
+    </div>
+    <div class="container-fluid_bg_blue">
+        <div class="container insta">
+            <p class="title">Instagram</p>
+            <p class="hashtag">#СохраняюПланету</p>
+            <div class="card-wrapper_insta">
+                <div class="card-item_insta">
+                    <div class="card-item_insta__photo"></div>
+                    <p class="card-item_insta__author">@_kisa_666</p>
+                    <p class="card-item_insta__post">
+                        bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla...
+                    </p>
+                    <p class="card-item_insta__small-hashtag">#saveThePlanet</p>
+                </div>
+                <div class="card-item_insta">
+                    <div class="card-item_insta__photo"></div>
+                    <p class="card-item_insta__author">@_kisa_666</p>
+                    <p class="card-item_insta__post">
+                        bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla...
+                    </p>
+                    <p class="card-item_insta__small-hashtag">#saveThePlanet</p>
+                </div>
+                <div class="card-item_insta">
+                    <div class="card-item_insta__photo"></div>
+                    <p class="card-item_insta__author">@_kisa_666</p>
+                    <p class="card-item_insta__post">
+                        bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla...
+                    </p>
+                    <p class="card-item_insta__small-hashtag">#saveThePlanet</p>
+                </div>
+                <div class="card-item_insta">
+                    <div class="card-item_insta__photo"></div>
+                    <p class="card-item_insta__author">@_kisa_666</p>
+                    <p class="card-item_insta__post">
+                        bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla bla
+                        bla bla bla bla bla bla bla bla bla...
+                    </p>
+                    <p class="card-item_insta__small-hashtag">#saveThePlanet</p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid social">
+        <span>Следите за акцией в социальных сетях </span>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -237,7 +277,7 @@
 		map.geoObjects.add(sinet);
 		map.geoObjects.add(deley);
 
-        unicom.events.add('click', function (e) {
+        unicom.events.add('click', function(e) {
 			map.setZoom(map.getZoom() + 3)
 			map.panTo(unicom.geometry.getCoordinates(), {delay: 0})
 		});
