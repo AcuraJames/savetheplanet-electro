@@ -1,0 +1,65 @@
+.points {
+    margin: 0 auto;
+    padding-top: 115px;
+    padding-bottom: 60px;
+
+    .title {
+        @include extra-bold;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #0d3d8e;
+    }
+
+    .card-wrapper {
+        margin-top: 50px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+
+        .card-item {
+            width: 280px;
+            margin-bottom: 20px;
+
+            &__photo {
+                min-height: 280px;
+                background-image: url('../../img/points/unicom.png');
+                background-size: cover;
+            }
+
+            &__address {
+                padding: 25px 20px 20px 20px;
+                background-color: #0d3d8e;
+                
+                .org, .name {
+                    @include semi-bold;
+                    font-size: 1.1rem;
+                    color: #fff;
+                }
+
+                .name {
+                    margin-bottom: 25px;
+                }
+
+                .city, .street, .floor {
+                    font-size: 0.8rem;
+                    color: #fff;
+                }
+
+                .btn {
+                    height: 50px;
+                    line-height: 50px;
+                    margin-top: 20px;
+                    text-align: center;
+                    @include bold;
+                    font-size: .9rem;
+                    background-color: #f0c000;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: lighten(#f0c000, 10%)
+                    }
+                }
+            }
+        }
+    }
+}

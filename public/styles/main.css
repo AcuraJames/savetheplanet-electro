@@ -7,84 +7,88 @@
 ul {
   list-style-type: none; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
 * {
   font-family: 'Montserrat', sans-serif; }
 
 .container-fluid {
-  width: 100%; }
-  .container-fluid--damage {
-    background: #fff; }
+  width: 100%;
+  background-color: #fff; }
+  .container-fluid_bg_space {
+    background-color: #103c86;
+    position: relative;
+    overflow: hidden;
+    z-index: -99; }
+    .container-fluid_bg_space::after {
+      content: "";
+      background-image: url("../../img/bg/earth.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1; }
 
 .container {
   width: 1180px;
   margin: 0 auto; }
 
-.container-fluid_bg_space {
-  background-color: #103c86;
-  position: relative;
-  overflow: hidden;
-  z-index: -99; }
-  .container-fluid_bg_space::after {
-    content: "";
-    background-image: url("../../img/bg/earth.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1; }
-  .container-fluid_bg_space .banner {
-    max-width: 100%;
-    height: 100vh;
-    padding: 50px 0;
-    text-align: center; }
-    .container-fluid_bg_space .banner .header {
-      height: 50px;
-      margin-bottom: -30px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .container-fluid_bg_space .banner .header img {
-        width: 70%; }
-    .container-fluid_bg_space .banner .tagline {
-      height: calc(100% - 65px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative; }
-      .container-fluid_bg_space .banner .tagline__thin {
-        font-weight: 300;
-        font-size: 5.1rem;
-        color: #fff; }
-      .container-fluid_bg_space .banner .tagline__thick {
-        font-weight: 700;
-        font-size: 7rem;
-        color: #a8c000; }
-      .container-fluid_bg_space .banner .tagline .battery-static {
-        position: absolute;
-        top: 375px;
-        left: 0;
-        z-index: 1; }
-    .container-fluid_bg_space .banner .footer {
-      font-weight: 600;
-      height: 50px;
-      margin-top: 30px;
-      font-size: 1rem;
-      color: #fff; }
-  .container-fluid_bg_space #scene {
+.banner {
+  max-width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  text-align: center; }
+  .banner .header {
+    height: 50px;
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .banner .header img {
+      width: 70%; }
+  .banner .tagline {
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative; }
-    .container-fluid_bg_space #scene .prlx {
-      max-width: 2080px;
+    .banner .tagline__thin {
+      font-weight: 300;
+      font-size: 5.1rem;
+      color: #fff; }
+    .banner .tagline__thick {
+      font-weight: 700;
+      font-size: 7rem;
+      color: #a8c000; }
+    .banner .tagline .battery-static {
       position: absolute;
-      top: -30px; }
-    .container-fluid_bg_space #scene .left {
-      left: -250px; }
-    .container-fluid_bg_space #scene .right {
-      right: -2250px; }
+      top: 375px;
+      left: 0;
+      z-index: 1; }
+  .banner .footer {
+    font-weight: 600;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #fff; }
+
+#scene {
+  position: relative; }
+  #scene .prlx {
+    max-width: 2080px;
+    position: absolute;
+    top: -30px; }
+  #scene .left {
+    left: -250px; }
+  #scene .right {
+    right: -2250px; }
 
 .damage {
   width: 1180px;
@@ -122,3 +126,48 @@ ul {
   height: 1352px;
   background-image: url("../../img/infographic/scheme.png");
   z-index: 999; }
+
+.points {
+  margin: 0 auto;
+  padding-top: 115px;
+  padding-bottom: 60px; }
+  .points .title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0d3d8e; }
+  .points .card-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+    .points .card-wrapper .card-item {
+      width: 280px;
+      margin-bottom: 20px; }
+      .points .card-wrapper .card-item__photo {
+        min-height: 280px;
+        background-image: url("../../img/points/unicom.png");
+        background-size: cover; }
+      .points .card-wrapper .card-item__address {
+        padding: 25px 20px 20px 20px;
+        background-color: #0d3d8e; }
+        .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
+          font-weight: 600;
+          font-size: 1.1rem;
+          color: #fff; }
+        .points .card-wrapper .card-item__address .name {
+          margin-bottom: 25px; }
+        .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
+          font-size: 0.8rem;
+          color: #fff; }
+        .points .card-wrapper .card-item__address .btn {
+          height: 50px;
+          line-height: 50px;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: 700;
+          font-size: .9rem;
+          background-color: #f0c000;
+          cursor: pointer; }
+          .points .card-wrapper .card-item__address .btn:hover {
+            background-color: #ffd324; }

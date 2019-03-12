@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Сдай батарейку - сохрани планету</title>
 </head>
 <body>
@@ -76,6 +77,81 @@
                 <div>fkndfnvdfjnvdfk</div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="container points">
+                <p class="title">Куда сдавать?</p>
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Магазин</p>
+                            <p class="name">«Планета электро»</p>
+                            <p class="city">г. Якутск</p>
+                            <p class="street">ул. бестужева-Марлинского 64/1</p>
+                            <p class="floor">1 этаж</p>
+                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.756217%2C62.058853&mode=search&oid=1279045849&ol=biz&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Магазин</p>
+                            <p class="name">«Планета электро»</p>
+                            <p class="city">г. Якутск</p>
+                            <p class="street">ул. Автодорожная 11А</p>
+                            <p class="floor">1 этаж</p>
+                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.693766%2C62.004873&mode=search&oid=1753350157&ol=biz&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Магазин</p>
+                            <p class="name">«юником»</p>
+                            <p class="city">г. Якутск</p>
+                            <p class="street">Вилюйский тракт 3км., 1/4</p>
+                            <p class="floor">1 этаж</p>
+                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.692832%2C62.030587&mode=search&oid=1071065166&ol=biz&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Офис группы компаний</p>
+                            <p class="name">«Синет»</p>
+                            <p class="city">г. Якутск, БЦ «Портал»</p>
+                            <p class="street">Глухой переулок, 2/1</p>
+                            <p class="floor">4 этаж (взять с собой паспорт)</p>
+                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.731900%2C62.023743&mode=search&oid=1832568899&ol=biz&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Торговый центр</p>
+                            <p class="name">«Дэлэй»</p>
+                            <p class="city">Горный улус, село Бердигистях</p>
+                            <p class="street">ул. Автодорожная 11ф</p>
+                            <p class="floor">1 этаж</p>
+                            <a href="https://yandex.ru/maps/?from=api-maps&l=map&ll=126.702035%2C62.096696&origin=jsapi_2_1_73&pt=129.756163%2C62.0782~129.693979%2C62.004914~129.692832%2C62.030588~129.7319%2C62.023743~126.7010228%2C62.0966526&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="map" style="height:540px"></div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script type="module">
@@ -83,6 +159,60 @@
         const parallaxInstance = new Parallax(scene, {
             relativeInput: true
         });
+    </script>
+    <script>
+
+    ymaps.ready(init);
+
+	function init(){     
+		let map = new ymaps.Map("map", {
+            center: [62.017602, 129.715451],
+            zoom: 8,
+            controls: ['zoomControl']
+		});
+
+		map.behaviors.disable('scrollZoom');
+
+		const pe_bm = new ymaps.Placemark([62.078200, 129.756163], { 
+		    hintContent: 'Планета Электро'
+		},{
+            iconColor: '#0d3d8e'
+        });			
+
+		const pe_aut = new ymaps.Placemark([62.004914, 129.693979], { 
+		    hintContent: 'Планета Электро' 
+		},{
+            iconColor: '#0d3d8e'
+        });	
+
+		const unicom = new ymaps.Placemark([62.030588, 129.692832], { 
+		    hintContent: 'Юником'
+		},{
+            iconColor: '#c30f28'
+        });				
+
+		const sinet = new ymaps.Placemark([62.023743, 129.731900], { 
+		    hintContent: 'ГК Синет' 
+		},{
+            iconColor: '#82cdff'
+        });	
+
+		const deley = new ymaps.Placemark([62.0966526, 126.7010228], { 
+		    hintContent: 'ТЦ Дэлэй'
+		});			
+
+        map.geoObjects.add(pe_bm);
+		map.geoObjects.add(pe_aut);
+		map.geoObjects.add(unicom);
+		map.geoObjects.add(sinet);
+		map.geoObjects.add(deley);
+
+        unicom.events.add('click', function (e) {
+			map.setZoom(map.getZoom() + 3)
+			map.panTo(unicom.geometry.getCoordinates(), {delay: 0})
+		});
+	}
+
     </script>
 </body>
 </html>
