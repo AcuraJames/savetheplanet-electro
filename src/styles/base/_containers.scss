@@ -23,6 +23,11 @@
             z-index: -1;
         }
     }
+
+    &_bg_blue {
+        z-index: 0;
+        background-color: #103c86;
+    }
 }
 
 .container {

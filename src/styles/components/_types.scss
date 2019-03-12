@@ -1,0 +1,23 @@
+.types {
+    height: 670px;
+    padding: 115px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    &__title {
+        @include bold;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__txt {
+        @include semi-bold;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #fff;
+    }
+
+}
