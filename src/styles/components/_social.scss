@@ -1,6 +1,27 @@
 .social {
-    height: 100px;
+    height: 95px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 2px solid #fff;
     background-color: #103c86;
+
+    span {
+        margin-right: 40px;
+        color: #fff;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            margin-right: 20px;
+            color: #fff;
+
+            &:hover {
+                color: #f0c000;
+            }
+        }
+    }
 }
