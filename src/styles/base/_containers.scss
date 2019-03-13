@@ -3,6 +3,7 @@
     background-color: #fff;
 
     &_bg_space {
+        display: flex;
         background-color: #103c86;
         position: relative;
         overflow: hidden;
@@ -38,6 +39,6 @@
 }
 
 .container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }

@@ -18,12 +18,26 @@
     .card-wrapper_insta {
         margin-top: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+
+        @media (max-width: 1180px) {
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 917px) {
+            justify-content: center;
+        }
 
         .card-item_insta {
             width: 280px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: left;
+
+            @media (max-width: 1180px) {
+                margin-right: 15px;
+                margin-bottom: 60px;
+            }
 
             &__photo {
                 min-height: 280px;

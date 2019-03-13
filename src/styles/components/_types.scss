@@ -11,6 +11,21 @@
         font-size: 2rem;
         text-align: center;
         color: #fff;
+
+        @media (max-width: 780px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__img img{
+        @media (max-width: 780px) {
+            width: 75%;
+        }
     }
 
     &__txt {
@@ -18,6 +33,9 @@
         font-size: 1rem;
         line-height: 1.5rem;
         color: #fff;
-    }
 
+        @media (max-width: 780px) {
+            font-size: .75rem;
+        }
+    }
 }

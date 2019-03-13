@@ -11,14 +11,14 @@
 </head>
 <body>
     <div class="container-fluid container-fluid_bg_space">
-        <div id="scene">
-            <div data-depth="0.1"><img class="prlx left"  src="./img/batteries/left_back.png"></div>
-            <div data-depth="0.2"><img class="prlx right" src="./img/batteries/right_back.png"></div>
-            <div data-depth="0.3"><img class="prlx left"  src="./img/batteries/left_middle.png"></div>
-            <div data-depth="0.4"><img class="prlx right" src="./img/batteries/right_middle.png"></div>
-            <div data-depth="0.8"><img class="prlx left"  src="./img/batteries/left_front.png"></div>
-            <div data-depth="1.0"><img class="prlx right" src="./img/batteries/right_front.png"></div>
-        </div>
+        <ul id="scene">
+            <li data-depth="0.1"><img class="prlx left"  src="./img/batteries/left_back.png"></li>
+            <li data-depth="0.2"><img class="prlx right" src="./img/batteries/right_back.png"></li>
+            <li data-depth="0.3"><img class="prlx left"  src="./img/batteries/left_middle.png"></li>
+            <li data-depth="0.4"><img class="prlx right" src="./img/batteries/right_middle.png"></li>
+            <li data-depth="0.8"><img class="prlx left"  src="./img/batteries/left_front.png"></li>
+            <li data-depth="1.0"><img class="prlx right" src="./img/batteries/right_front.png"></li>
+        </ul>
         <div class="container banner">
             <div class="header">
                 <div class="header__logo"><img src="./img/logo/jazzway.png"></div>
@@ -74,9 +74,7 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="infographic">
-                <div>fkndfnvdfjnvdfk</div>
-            </div>
+            <div class="infographic"></div>
         </div>
         <div class="container-fluid">
             <div class="container points">
@@ -112,7 +110,7 @@
                         <div class="card-item__photo"></div>
                         <div class="card-item__address">
                             <p class="org">Магазин</p>
-                            <p class="name">«юником»</p>
+                            <p class="name">«Юником»</p>
                             <p class="city">г. Якутск</p>
                             <p class="street">Вилюйский тракт 3км., 1/4</p>
                             <p class="floor">1 этаж</p>
@@ -147,6 +145,19 @@
                             </a>
                         </div>
                     </div>
+                    <div class="card-item">
+                        <div class="card-item__photo"></div>
+                        <div class="card-item__address">
+                            <p class="org">Торговый центр</p>
+                            <p class="name">«Эдэм»</p>
+                            <p class="city">г. Покровск</p>
+                            <p class="street">ул. Николаева, 5</p>
+                            <p class="floor">1 этаж</p>
+                            <a href="https://yandex.ru/maps/20615/pokrovsk/?ll=129.150744%2C61.484846&mode=poi&poi%5Bpoint%5D=129.150714%2C61.485056&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D177627365940&rl=127.47378378%2C61.15892923&z=18" target="_blank">
+                                <div class="btn">Показать на карте</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,7 +180,7 @@
             </div>
         </div>
         <div class="container-fluid_video">
-            <iframe width="640" height="345" src="https://www.youtube.com/watch?v=2lprC0yYeFw" frameborder="0"></iframe>
+            <iframe width="640" height="345" src="https://www.youtube.com/watch?v=nTYP3dAE73I" frameborder="0"></iframe>
         </div>
     </div>
     <div class="container-fluid_bg_blue">
@@ -223,10 +234,10 @@
     <div class="container-fluid social">
         <span>Следите за акцией в социальных сетях </span>
         <div class="social__icons">
-            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="" target="_blank"><i class="fab fa-vk"></i></a>
-            <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/planetaelectro/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/planetaelectro" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://vk.com/planetaelectro" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="https://www.youtube.com/channel/UCITRrNCJM1DSj7YXwcbkY4Q" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
 
@@ -234,7 +245,7 @@
     <script type="module">
         const scene = document.getElementById('scene');
         const parallaxInstance = new Parallax(scene, {
-            relativeInput: true
+            relativeInput: true,
         });
     </script>
     <script>
@@ -243,7 +254,7 @@
 
 	function init(){     
 		let map = new ymaps.Map("map", {
-            center: [62.017602, 129.715451],
+            center: [61.987903, 128.484982],
             zoom: 8,
             controls: ['zoomControl']
 		});
@@ -276,6 +287,10 @@
 
 		const deley = new ymaps.Placemark([62.0966526, 126.7010228], { 
 		    hintContent: 'ТЦ Дэлэй'
+		});		
+        	
+		const eden = new ymaps.Placemark([61.484846, 129.150744], { 
+		    hintContent: 'ТЦ Дэлэй'
 		});			
 
         map.geoObjects.add(pe_bm);
@@ -283,6 +298,7 @@
 		map.geoObjects.add(unicom);
 		map.geoObjects.add(sinet);
 		map.geoObjects.add(deley);
+		map.geoObjects.add(eden);
 
         unicom.events.add('click', function(e) {
 			map.setZoom(map.getZoom() + 3)

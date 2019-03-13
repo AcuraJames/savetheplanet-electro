@@ -9,6 +9,12 @@
     span {
         margin-right: 40px;
         color: #fff;
+
+        
+        @media (max-width: 780px) {
+            max-width: 135px;
+            font-size: 0.8rem;
+        }
     }
 
     &__icons {

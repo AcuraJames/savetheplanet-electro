@@ -3,6 +3,10 @@
     padding-top: 115px;
     padding-bottom: 60px;
 
+    @media (max-width: 1180px) {
+        padding-top: 65px;
+    }
+
     .title {
         @include bold;
         font-size: 2rem;
@@ -14,11 +18,20 @@
         margin-top: 50px;
         display: flex;
         flex-flow: wrap;
-        justify-content: space-between;
+        //justify-content: space-between;
+
+        @media (max-width: 1180px) {
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 917px) {
+            justify-content: center;
+        }
 
         .card-item {
             width: 280px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            margin-right: 15px;
 
             &__photo {
                 min-height: 280px;

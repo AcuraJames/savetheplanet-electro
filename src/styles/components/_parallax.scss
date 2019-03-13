@@ -1,0 +1,21 @@
+#scene {
+    position: relative;
+    top: -100px;
+
+    li {
+        position: absolute;
+    }
+
+    .prlx {
+        max-width: 1180px;
+        position: absolute;
+    }
+
+    .left {
+        left: -250px;
+    }
+
+    .right {
+        right: -2000px
+    }
+}

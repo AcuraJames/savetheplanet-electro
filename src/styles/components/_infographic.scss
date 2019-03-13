@@ -1,6 +1,46 @@
 .infographic {
-    width: 100%;
+    max-width: 100%;
     height: 1352px;
     background-image: url('../../img/infographic/scheme.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index: 999;
+
+    @media (max-width: 1180px) {
+        height: 1260px;
+        background-size: 150%;
+    }
+
+    @media (max-width: 960px) {
+        height: 1000px;
+    }
+
+    @media (max-width: 800px) {
+        height: 860px;
+    }
+
+    @media (max-width: 680px) {
+        height: 760px;
+    }
+
+    @media (max-width: 630px) {
+        height: 660px;
+    }
+
+    @media (max-width: 560px) {
+        height: 552px;
+    }
+
+    @media (max-width: 490px) {
+        height: 502px;
+    }
+
+    @media (max-width: 425px) {
+        height: 430px;
+    }
+
+    @media (max-width: 356px) {
+        height: 350px;
+    }
 }
