@@ -17,14 +17,9 @@
     .card-wrapper {
         margin-top: 50px;
         display: flex;
-        flex-flow: wrap;
-        //justify-content: space-between;
+        flex-wrap: wrap;
 
         @media (max-width: 1180px) {
-            justify-content: flex-start;
-        }
-
-        @media (max-width: 917px) {
             justify-content: center;
         }
 
