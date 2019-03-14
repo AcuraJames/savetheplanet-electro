@@ -250,11 +250,8 @@ a {
   .points .card-wrapper {
     margin-top: 50px;
     display: flex;
-    flex-flow: wrap; }
+    flex-wrap: wrap; }
     @media (max-width: 1180px) {
-      .points .card-wrapper {
-        justify-content: flex-start; } }
-    @media (max-width: 917px) {
       .points .card-wrapper {
         justify-content: center; } }
     .points .card-wrapper .card-item {
@@ -337,9 +334,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between; }
     @media (max-width: 1180px) {
-      .insta .card-wrapper_insta {
-        justify-content: flex-start; } }
-    @media (max-width: 917px) {
       .insta .card-wrapper_insta {
         justify-content: center; } }
     .insta .card-wrapper_insta .card-item_insta {
