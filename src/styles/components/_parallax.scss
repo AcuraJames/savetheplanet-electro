@@ -1,21 +1,39 @@
-#scene {
-    position: relative;
-    top: -100px;
+.prlx {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    background-size: cover;
+}
 
-    li {
-        position: absolute;
-    }
+.left-back {
+    background-image: url('../../img/batteries/left_back.png');
+    left: 0;
+}
 
-    .prlx {
-        max-width: 1180px;
-        position: absolute;
-    }
+.left-middle {
+    background-image: url('../../img/batteries/left_middle.png');
+    left: 0;
+}
 
-    .left {
-        left: -250px;
-    }
+.left-front {
+    background-image: url('../../img/batteries/left_front.png');
+    top: -150px;
+    left: -250px;
+    height: 120vh;
+}
 
-    .right {
-        right: -2000px
-    }
+.right-back {
+    background-image: url('../../img/batteries/right_back.png');
+    left: 0;
+}
+
+.right-middle {
+    background-image: url('../../img/batteries/right-middle.png');
+    right: 3000px;
+}
+
+.right-front {
+    background-image: url('../../img/batteries/right_front.png');
+    right: 3000px;
 }

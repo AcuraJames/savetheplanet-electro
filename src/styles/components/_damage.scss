@@ -19,6 +19,10 @@
         font-size: 1.1rem;
         line-height: 1.5rem;
 
+        p {
+            display: block;
+        }
+
         @media (max-width: 1180px) {
             font-size: .9rem;
         }

@@ -1,5 +1,5 @@
 
-.banner {
+.hero {
     max-width: 100%;
     height: 100vh;
     padding: 50px 0;
@@ -50,7 +50,15 @@
             }
 
             @media (max-width: 425px) {
+                font-size: 1.8rem;
+            }
+
+            @media (max-width: 360px) {
                 font-size: 1.5rem;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 1.3rem;
             }
         }
 
@@ -76,7 +84,15 @@
             }
 
             @media (max-width: 425px) {
+                font-size: 2.25rem;
+            }
+
+            @media (max-width: 360px) {
                 font-size: 2rem;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 1.7rem;
             }
 
         }
@@ -84,19 +100,30 @@
         .battery-static {
             position: absolute;
             top: 375px;
-            left: 0;
+            left: -50px;
             z-index: 1;
 
             @media (max-width: 1180px) {
                 width: 75%;
+                top: 400px;
                 left: 50%;
-                transform: translateX(-50%)
+                transform: translateX(-51%)
             }
 
             @media (max-width: 780px) {
                 width: 65%;
-                top: 390px;
-                left: 50%;
+                transform: translateX(-52%)
+            }
+
+            @media (max-width: 460px) {
+                width: 85%;
+                top: 325px;
+                transform: translateX(-50%)
+            }
+
+            @media (max-width: 320px) {
+                width: 85%;
+                top: 195px;
                 transform: translateX(-50%)
             }
         }
@@ -111,21 +138,4 @@
     }
 }
 
-#scene {
-    position: relative;
-
-    .prlx {
-        max-width: 2080px;
-        position: absolute;
-        top: -30px;
-    }
-
-    .left {
-        left: -250px;
-    }
-
-    .right {
-        right: -2250px;
-    }
-}
 
