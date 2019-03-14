@@ -8,32 +8,130 @@
 
 .left-back {
     background-image: url('../../img/batteries/left_back.png');
-    left: 0;
+    top: -150px;
+    left: -350px;
+    height: 135vh;
+
+    @media (max-width: 1180px) {
+        left: -450px;
+    }
+
+    @media (max-width: 1440px) {
+        top: -220px;
+        left: -1100px;
+        width: 130vw;
+    }
+
+    @media (max-width: 1024px) {
+        left: -900px;
+    }
+
+    @media (max-width: 768px) {
+        left: -500px;
+    }
 }
 
 .left-middle {
     background-image: url('../../img/batteries/left_middle.png');
-    left: 0;
+    top: -150px;	
+    left: -250px;
+    width: 110vw;
+
+    @media (max-width: 1180px) {
+        left: -200px;
+    }
+
+    @media (max-width: 1440px) {
+        top: 100px;
+        left: -450px;
+    }
+
+    @media (max-width: 1024px) {
+        top: -20px;
+        left: -300px;
+    }
 }
 
 .left-front {
     background-image: url('../../img/batteries/left_front.png');
     top: -150px;
-    left: -250px;
+    left: -350px;
     height: 120vh;
+    
+    @media (max-width: 1180px) {
+        left: -200px;
+    }
+
+    @media (max-width: 1440px) {
+        left: -750px;
+        height: 120vh;
+    }
+
+    @media (max-width: 1024px) {
+        left: -600px;
+    }
+
+    @media (max-width: 768px) {
+        left: -400px;
+    }
 }
 
 .right-back {
     background-image: url('../../img/batteries/right_back.png');
-    left: 0;
+    top: 50px;
+    left: 200px;
+
+    @media (max-width: 1180px) {
+        left: -200px;
+        width: 130vw;
+    }
 }
 
 .right-middle {
-    background-image: url('../../img/batteries/right-middle.png');
-    right: 3000px;
+    background-image: url('../../img/batteries/right_middle.png');
+    left: 450px;
+
+    @media (max-width: 1180px) {
+        left: -250px;
+        width: 150vw;
+    }
+
+    @media (max-width: 1440px) {
+        left: -1000px;
+        width: 200vw;
+    }    
+
+    @media (max-width: 1024px) {
+        left: -700px;
+    }
+
+    @media (max-width: 768px) {
+        left: -550px;
+    }
 }
 
 .right-front {
     background-image: url('../../img/batteries/right_front.png');
-    right: 3000px;
+    top: -150px;
+    left: 50px;
+    width: 110vw;
+    height: 130vh;
+
+    @media (max-width: 1180px) {
+        left: -400px;
+        width: 170vw;
+    }
+
+    @media (max-width: 1440px) {
+        left: -1100px;
+        width: 200vw;
+    } 
+
+    @media (max-width: 1024px) {
+        left: -800px;
+    }
+
+    @media (max-width: 768px) {
+        left: -700px;
+    }
 }
