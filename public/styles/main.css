@@ -318,6 +318,9 @@ a {
   background-position: center center;
   background-size: cover;
   z-index: 999; }
+  @media (min-width: 1900px) {
+    .infographic {
+      height: 2260px; } }
   @media (max-width: 1180px) {
     .infographic {
       height: 1260px;

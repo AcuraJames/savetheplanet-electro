@@ -7,6 +7,10 @@
     background-size: cover;
     z-index: 999;
 
+    @media (min-width: 1900px) {
+        height: 2260px;
+    }
+
     @media (max-width: 1180px) {
         height: 1260px;
         background-size: 150%;
