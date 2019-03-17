@@ -49,118 +49,145 @@ a {
   margin: 0 auto; }
 
 .prlx {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
+  width: 4000px;
+  height: 2500px;
+  background-size: cover;
   position: absolute;
-  background-size: cover; }
-  @media (max-width: 768px) {
+  top: 0;
+  left: 0; }
+  @media (min-height: 1000px) {
+    .prlx {
+      transform: translateY(50%); } }
+  @media (max-width: 2560px) {
+    .prlx {
+      width: 2700px;
+      height: 1900px; } }
+  @media (max-width: 1920px) {
+    .prlx {
+      width: 1920px;
+      height: 1400px; } }
+  @media (max-width: 1366px) {
+    .prlx {
+      width: 1366px;
+      height: 1000px; } }
+  @media (max-width: 1024px) {
+    .prlx {
+      width: 1024px;
+      height: 800px; } }
+  @media (max-width: 1020px) {
     .prlx {
       display: none; } }
 
 .left-back {
-  background-image: url("../../img/batteries/left_back.png");
-  top: -150px;
-  left: -350px;
-  height: 135vh; }
-  @media (max-width: 1180px) {
+  background-image: url("../../img/batteries/croped1920/left_back.png");
+  top: 200px;
+  left: 1000px; }
+  @media (max-width: 2560px) {
     .left-back {
-      left: -450px; } }
-  @media (max-width: 1440px) {
+      height: 1700px;
+      top: 100px;
+      left: 700px; } }
+  @media (max-width: 1920px) {
     .left-back {
-      top: -220px;
-      left: -1100px;
-      width: 130vw; } }
+      height: 1000px;
+      left: 500px; } }
+  @media (max-width: 1920px) {
+    .left-back {
+      height: 800px;
+      left: 400px; } }
   @media (max-width: 1024px) {
     .left-back {
-      left: -900px; } }
-  @media (max-width: 768px) {
-    .left-back {
-      left: -500px; } }
+      height: 600px;
+      top: 150px;
+      left: 200px; } }
 
 .left-middle {
-  background-image: url("../../img/batteries/left_middle.png");
-  top: -150px;
-  left: -250px;
-  width: 110vw; }
-  @media (max-width: 1180px) {
+  background-image: url("../../img/batteries/croped1920/left_middle.png");
+  top: 500px;
+  left: 300px; }
+  @media (max-width: 2560px) {
     .left-middle {
-      left: -200px; } }
-  @media (max-width: 1440px) {
+      height: 1300px;
+      top: 300px; } }
+  @media (max-width: 1920px) {
     .left-middle {
-      top: 100px;
-      left: -450px; } }
+      height: 1000px;
+      left: 100px; } }
+  @media (max-width: 1920px) {
+    .left-middle {
+      top: 200px;
+      left: 150px;
+      height: 800px; } }
   @media (max-width: 1024px) {
     .left-middle {
-      top: -20px;
-      left: -300px; } }
+      height: 500px;
+      left: 100px; } }
 
 .left-front {
-  background-image: url("../../img/batteries/left_front.png");
-  top: -150px;
-  left: -350px;
-  height: 120vh; }
-  @media (max-width: 1180px) {
+  background-image: url("../../img/batteries/croped1920/left_front.png");
+  top: -300px;
+  left: 100px; }
+  @media (max-width: 2560px) {
     .left-front {
-      left: -200px; } }
-  @media (max-width: 1440px) {
+      top: -250px;
+      left: -100px; } }
+  @media (max-width: 1920px) {
     .left-front {
-      left: -750px;
-      height: 120vh; } }
+      top: -100px;
+      left: 0; } }
+  @media (max-width: 1920px) {
+    .left-front {
+      top: 0;
+      left: 50px; } }
   @media (max-width: 1024px) {
     .left-front {
-      left: -600px; } }
-  @media (max-width: 768px) {
-    .left-front {
-      left: -400px; } }
-
-.right-back {
-  background-image: url("../../img/batteries/right_back.png");
-  top: 50px;
-  left: 200px; }
-  @media (max-width: 1180px) {
-    .right-back {
-      left: -200px;
-      width: 130vw; } }
+      height: 900px;
+      top: -50px;
+      left: -50px; } }
 
 .right-middle {
-  background-image: url("../../img/batteries/right_middle.png");
-  left: 450px; }
-  @media (max-width: 1180px) {
+  background-image: url("../../img/batteries/croped1920/right_middle.png");
+  top: 200px;
+  left: 150px; }
+  @media (max-width: 2560px) {
     .right-middle {
-      left: -250px;
-      width: 150vw; } }
-  @media (max-width: 1440px) {
+      height: 1200px;
+      left: 0; } }
+  @media (max-width: 1920px) {
     .right-middle {
-      left: -1000px;
-      width: 200vw; } }
+      height: 1000px;
+      top: 100px;
+      left: 130px; } }
+  @media (max-width: 1920px) {
+    .right-middle {
+      height: 800px;
+      top: 150px; } }
   @media (max-width: 1024px) {
     .right-middle {
-      left: -700px; } }
-  @media (max-width: 768px) {
-    .right-middle {
-      left: -550px; } }
+      height: 600px;
+      top: 150px;
+      left: 70px; } }
 
 .right-front {
-  background-image: url("../../img/batteries/right_front.png");
-  top: -150px;
-  left: 50px;
-  width: 110vw;
-  height: 130vh; }
-  @media (max-width: 1180px) {
+  background-image: url("../../img/batteries/croped1920/right_front.png");
+  top: -250px;
+  left: -100px; }
+  @media (max-width: 2560px) {
     .right-front {
-      left: -400px;
-      width: 170vw; } }
-  @media (max-width: 1440px) {
+      left: 200px; } }
+  @media (max-width: 1920px) {
     .right-front {
-      left: -1100px;
-      width: 200vw; } }
+      top: -100px;
+      left: 0; } }
+  @media (max-width: 1920px) {
+    .right-front {
+      top: 0;
+      left: 50px; } }
   @media (max-width: 1024px) {
     .right-front {
-      left: -800px; } }
-  @media (max-width: 768px) {
-    .right-front {
-      left: -700px; } }
+      width: 1100px;
+      top: 50px;
+      left: -60px; } }
 
 .hero {
   max-width: 100%;
