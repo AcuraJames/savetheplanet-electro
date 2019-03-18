@@ -29,13 +29,22 @@
     }
 
     &__txt {
+        margin: 0 40px;
+        display: block;
         @include semi-bold;
         font-size: 1rem;
         line-height: 1.5rem;
         color: #fff;
 
-        @media (max-width: 780px) {
-            font-size: .75rem;
+        @media (max-width: 320px) {
+            margin: 0 20px;
+        }
+
+        p {
+            @media (max-width: 780px) {
+                display: inline;
+                font-size: .75rem;
+            }
         }
     }
 }

@@ -7,8 +7,16 @@
     background-size: cover;
     z-index: 999;
 
-    @media (min-width: 1900px) {
-        height: 2260px;
+    @media (min-width: 1920px) {
+        height: 2160px;
+    }
+
+    @media (min-width: 3065px) {
+        height: 2460px;
+    }
+
+    @media (min-width: 3490px) {
+        height: 2860px;
     }
 
     @media (max-width: 1180px) {

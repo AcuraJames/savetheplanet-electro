@@ -12,6 +12,10 @@
         justify-content: center;
         align-items: center;
 
+        &__logo {
+            width: 132px;
+        }
+
         img {
             width: 70%;
 
@@ -110,8 +114,14 @@
                 transform: translateX(-51%)
             }
 
-            @media (max-width: 780px) {
-                width: 65%;
+            @media (max-width: 1024px) {
+                top: 600px;
+                left: 50%;
+                transform: translateX(-51%)
+            }
+
+            @media (max-width: 768px) {
+                top: 435px;
                 transform: translateX(-52%)
             }
 
@@ -121,10 +131,23 @@
                 transform: translateX(-50%)
             }
 
+            @media (max-width: 415px) {
+                top: 280px;
+                transform: translateX(-50%)
+            }
+
+            @media (max-width: 375px) {
+                top: 250px;
+                transform: translateX(-50%)
+            }
+
             @media (max-width: 320px) {
-                width: 85%;
                 top: 195px;
                 transform: translateX(-50%)
+            }
+
+            @media (min-height: 820px) {
+                
             }
         }
     }

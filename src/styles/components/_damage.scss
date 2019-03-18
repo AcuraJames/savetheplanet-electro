@@ -21,6 +21,10 @@
 
         p {
             display: block;
+
+            @media (max-width: 768px) {
+                display: inline;
+            }
         }
 
         @media (max-width: 1180px) {

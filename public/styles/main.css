@@ -55,9 +55,9 @@ a {
   position: absolute;
   top: 0;
   left: 0; }
-  @media (min-height: 1000px) {
+  @media (min-height: 1366px) {
     .prlx {
-      transform: translateY(50%); } }
+      transform: translateY(25%); } }
   @media (max-width: 2560px) {
     .prlx {
       width: 2700px;
@@ -200,6 +200,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .hero .header__logo {
+      width: 132px; }
     .hero .header img {
       width: 70%; }
       @media (max-width: 780px) {
@@ -272,18 +274,30 @@ a {
           top: 400px;
           left: 50%;
           transform: translateX(-51%); } }
-      @media (max-width: 780px) {
+      @media (max-width: 1024px) {
         .hero .tagline .battery-static {
-          width: 65%;
+          top: 600px;
+          left: 50%;
+          transform: translateX(-51%); } }
+      @media (max-width: 768px) {
+        .hero .tagline .battery-static {
+          top: 435px;
           transform: translateX(-52%); } }
       @media (max-width: 460px) {
         .hero .tagline .battery-static {
           width: 85%;
           top: 325px;
           transform: translateX(-50%); } }
+      @media (max-width: 415px) {
+        .hero .tagline .battery-static {
+          top: 280px;
+          transform: translateX(-50%); } }
+      @media (max-width: 375px) {
+        .hero .tagline .battery-static {
+          top: 250px;
+          transform: translateX(-50%); } }
       @media (max-width: 320px) {
         .hero .tagline .battery-static {
-          width: 85%;
           top: 195px;
           transform: translateX(-50%); } }
   .hero .footer {
@@ -313,6 +327,9 @@ a {
     line-height: 1.5rem; }
     .damage__txt p {
       display: block; }
+      @media (max-width: 768px) {
+        .damage__txt p {
+          display: inline; } }
     @media (max-width: 1180px) {
       .damage__txt {
         font-size: .9rem; } }
@@ -345,9 +362,15 @@ a {
   background-position: center center;
   background-size: cover;
   z-index: 999; }
-  @media (min-width: 1900px) {
+  @media (min-width: 1920px) {
     .infographic {
-      height: 2260px; } }
+      height: 2160px; } }
+  @media (min-width: 3065px) {
+    .infographic {
+      height: 2460px; } }
+  @media (min-width: 3490px) {
+    .infographic {
+      height: 2860px; } }
   @media (max-width: 1180px) {
     .infographic {
       height: 1260px;
@@ -400,6 +423,9 @@ a {
       width: 280px;
       margin-bottom: 15px;
       margin-right: 15px; }
+      @media (max-width: 768px) {
+        .points .card-wrapper .card-item {
+          margin-right: 0; } }
       .points .card-wrapper .card-item__photo {
         min-height: 280px;
         background-image: url("../../img/points/unicom.png");
@@ -450,12 +476,18 @@ a {
     .types__img img {
       width: 75%; } }
   .types__txt {
+    margin: 0 40px;
+    display: block;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fff; }
-    @media (max-width: 780px) {
+    @media (max-width: 320px) {
       .types__txt {
+        margin: 0 20px; } }
+    @media (max-width: 780px) {
+      .types__txt p {
+        display: inline;
         font-size: .75rem; } }
 
 .insta {
@@ -483,6 +515,10 @@ a {
       @media (max-width: 1180px) {
         .insta .card-wrapper_insta .card-item_insta {
           margin-right: 15px;
+          margin-bottom: 60px; } }
+      @media (max-width: 768px) {
+        .insta .card-wrapper_insta .card-item_insta {
+          margin-right: 0;
           margin-bottom: 60px; } }
       .insta .card-wrapper_insta .card-item_insta__photo {
         min-height: 280px;

@@ -36,6 +36,11 @@
                 margin-bottom: 60px;
             }
 
+            @media (max-width: 768px) {
+                margin-right: 0;
+                margin-bottom: 60px;
+            }
+
             &__photo {
                 min-height: 280px;
                 background-image: url('../../img/points/unicom.png');
