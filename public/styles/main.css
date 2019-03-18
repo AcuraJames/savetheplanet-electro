@@ -294,7 +294,7 @@ a {
           transform: translateX(-50%); } }
       @media (max-width: 375px) {
         .hero .tagline .battery-static {
-          top: 250px;
+          top: 325px;
           transform: translateX(-50%); } }
       @media (max-width: 320px) {
         .hero .tagline .battery-static {
@@ -427,7 +427,7 @@ a {
         .points .card-wrapper .card-item {
           margin-right: 0; } }
       .points .card-wrapper .card-item__photo {
-        min-height: 280px;
+        height: 280px;
         background-image: url("../../img/points/unicom.png");
         background-size: cover; }
       .points .card-wrapper .card-item__address {
@@ -448,7 +448,7 @@ a {
           margin-top: 20px;
           text-align: center;
           font-weight: 700;
-          font-size: .9rem;
+          font-size: .9em;
           background-color: #f0c000;
           cursor: pointer; }
           .points .card-wrapper .card-item__address .btn:hover {

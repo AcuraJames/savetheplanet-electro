@@ -34,7 +34,7 @@
             }
 
             &__photo {
-                min-height: 280px;
+                height: 280px;
                 background-image: url('../../img/points/unicom.png');
                 background-size: cover;
             }
@@ -64,7 +64,7 @@
                     margin-top: 20px;
                     text-align: center;
                     @include bold;
-                    font-size: .9rem;
+                    font-size: .9em;
                     background-color: #f0c000;
                     cursor: pointer;
 
