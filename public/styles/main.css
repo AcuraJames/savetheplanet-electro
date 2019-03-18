@@ -442,7 +442,7 @@ a {
         .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
           font-size: 0.8rem;
           color: #fff; }
-        .points .card-wrapper .card-item__address .btn {
+        .points .card-wrapper .card-item__address .show-btn {
           height: 50px;
           line-height: 50px;
           margin-top: 20px;
@@ -451,7 +451,7 @@ a {
           font-size: .9em;
           background-color: #f0c000;
           cursor: pointer; }
-          .points .card-wrapper .card-item__address .btn:hover {
+          .points .card-wrapper .card-item__address .show-btn:hover {
             background-color: #ffd324; }
 
 .types {
@@ -566,5 +566,5 @@ a {
     .social__icons i {
       margin-right: 20px;
       color: #fff; }
-      .social__icons i:hover {
-        color: #f0c000; }
+    .social__icons a:hover i {
+      color: #f0c000; }

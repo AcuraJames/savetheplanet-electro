@@ -86,9 +86,7 @@
                             <p class="city">г. Якутск</p>
                             <p class="street">ул. бестужева-Марлинского 64/1</p>
                             <p class="floor">1 этаж</p>
-                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.756217%2C62.058853&mode=search&oid=1279045849&ol=biz&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -99,9 +97,7 @@
                             <p class="city">г. Якутск</p>
                             <p class="street">ул. Автодорожная 11А</p>
                             <p class="floor">1 этаж</p>
-                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.693766%2C62.004873&mode=search&oid=1753350157&ol=biz&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -112,9 +108,7 @@
                             <p class="city">г. Якутск</p>
                             <p class="street">Вилюйский тракт 3км., 1/4</p>
                             <p class="floor">1 этаж</p>
-                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.692832%2C62.030587&mode=search&oid=1071065166&ol=biz&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -125,9 +119,7 @@
                             <p class="city">г. Якутск, БЦ «Портал»</p>
                             <p class="street">Глухой переулок, 2/1</p>
                             <p class="floor">4 этаж (взять с собой паспорт)</p>
-                            <a href="https://yandex.ru/maps/74/yakutsk/?ll=129.731900%2C62.023743&mode=search&oid=1832568899&ol=biz&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                     <div class="card-item hidden">
@@ -138,9 +130,7 @@
                             <p class="city">Горный улус, село Бердигистях</p>
                             <p class="street">ул. Данилова, 14</p>
                             <p class="floor">1 этаж</p>
-                            <a href="https://yandex.ru/maps/?from=api-maps&l=map&ll=126.702035%2C62.096696&origin=jsapi_2_1_73&pt=129.756163%2C62.0782~129.693979%2C62.004914~129.692832%2C62.030588~129.7319%2C62.023743~126.7010228%2C62.0966526&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                     <div class="card-item hidden">
@@ -151,9 +141,7 @@
                             <p class="city">г. Покровск</p>
                             <p class="street">ул. Николаева, 5</p>
                             <p class="floor">1 этаж</p>
-                            <a href="https://yandex.ru/maps/20615/pokrovsk/?ll=129.150744%2C61.484846&mode=poi&poi%5Bpoint%5D=129.150714%2C61.485056&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D177627365940&rl=127.47378378%2C61.15892923&z=18" target="_blank">
-                                <div class="btn">Показать на карте</div>
-                            </a>
+                            <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
                 </div>
@@ -256,7 +244,7 @@
     </script>
 
     <script>
-
+    
     ymaps.ready(init);
 
 	function init(){     
@@ -297,7 +285,7 @@
 		});		
         	
 		const eden = new ymaps.Placemark([61.484846, 129.150744], { 
-		    hintContent: 'ТЦ Дэлэй'
+		    hintContent: 'ТЦ Эдэм'
 		});			
 
         map.geoObjects.add(pe_bm);
@@ -305,12 +293,22 @@
 		map.geoObjects.add(unicom);
 		map.geoObjects.add(sinet);
 		map.geoObjects.add(deley);
-		map.geoObjects.add(eden);
+        map.geoObjects.add(eden);
+        
+        const mapTop = document.getElementById('map')
+        const items = document.getElementsByClassName('show-btn')
+        const points = [pe_bm, pe_aut, unicom, sinet, deley, eden]
+        let zoom = false
 
-        unicom.events.add('click', function(e) {
-			map.setZoom(map.getZoom() + 3)
-			map.panTo(unicom.geometry.getCoordinates(), {delay: 0})
-		});
+        for(let i = 0; i <= items.length; i++) {
+            items[i].onclick = (e) => {    
+                if(!zoom) 
+                    map.setZoom(map.getZoom() + 9)
+                map.panTo(points[i].geometry.getCoordinates(), {delay: 1000})
+                window.scrollTo(0, mapTop.offsetTop)
+                zoom = true
+            }
+        }
 	}
 
     </script>
