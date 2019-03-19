@@ -412,24 +412,38 @@ a {
     text-align: center;
     color: #0d3d8e; }
   .points .card-wrapper {
-    margin-top: 50px;
+    width: auto;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; }
     @media (max-width: 1180px) {
       .points .card-wrapper {
         justify-content: center; } }
+    .points .card-wrapper .row {
+      display: flex;
+      flex-wrap: nowrap; }
+      @media (max-width: 325px) {
+        .points .card-wrapper .row {
+          flex-direction: column; } }
     .points .card-wrapper .card-item {
       width: 280px;
       margin-bottom: 15px;
       margin-right: 15px; }
-      @media (max-width: 768px) {
+      @media (max-width: 600px) {
         .points .card-wrapper .card-item {
-          margin-right: 0; } }
+          width: 190px;
+          margin-left: 2px;
+          margin-right: 2px;
+          margin-bottom: 5px; } }
       .points .card-wrapper .card-item__photo {
         height: 280px;
         background-image: url("../../img/points/unicom.png");
+        background-position: center center;
         background-size: cover; }
+        @media (max-width: 600px) {
+          .points .card-wrapper .card-item__photo {
+            height: 200px; } }
       .points .card-wrapper .card-item__address {
         padding: 25px 20px 20px 20px;
         background-color: #0d3d8e; }
@@ -437,22 +451,49 @@ a {
           font-weight: 600;
           font-size: 1.1rem;
           color: #fff; }
+          @media (max-width: 600px) {
+            .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
+              font-size: 0.72rem; } }
         .points .card-wrapper .card-item__address .name {
           margin-bottom: 25px; }
+          @media (max-width: 600px) {
+            .points .card-wrapper .card-item__address .name {
+              margin-bottom: 20px; } }
         .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
           font-size: 0.8rem;
           color: #fff; }
+          @media (max-width: 600px) {
+            .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
+              font-size: 0.55rem; } }
         .points .card-wrapper .card-item__address .show-btn {
           height: 50px;
           line-height: 50px;
-          margin-top: 20px;
+          margin-top: 25px;
           text-align: center;
           font-weight: 700;
           font-size: .9em;
           background-color: #f0c000;
           cursor: pointer; }
+          @media (max-width: 600px) {
+            .points .card-wrapper .card-item__address .show-btn {
+              height: 40px;
+              line-height: 40px;
+              margin-top: 20px;
+              font-size: 0.7rem; } }
           .points .card-wrapper .card-item__address .show-btn:hover {
             background-color: #ffd324; }
+  .points #btn-show-more {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #f0c000;
+    cursor: pointer; }
+    .points #btn-show-more:hover {
+      background-color: #ffd324; }
 
 .types {
   height: 670px;
