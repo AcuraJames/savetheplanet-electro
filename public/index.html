@@ -214,12 +214,13 @@
 
     <script>
         window.onload = function() {
-            let flag = true;
-            const items = document.getElementsByClassName('hidden')
-            document.getElementById('btn-show').onclick = function() { showItems() }
+            let flag = true
+            let items = document.getElementsByClassName('hidden')
+            document.getElementById('btn-show').addEventListener('click', function(){showItems()})
 
             function showItems() {
                 for(let i = 0; i <= items.length; i++) {
+                    console.log(items[i])
                     if(flag) {
                         items[i].style.display = 'none'
                         flag = false

@@ -364,7 +364,7 @@ a {
   z-index: 999; }
   @media (min-width: 1920px) {
     .infographic {
-      height: 2160px; } }
+      height: 1600px; } }
   @media (min-width: 3065px) {
     .infographic {
       height: 2460px; } }
