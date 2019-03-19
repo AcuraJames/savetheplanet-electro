@@ -230,15 +230,14 @@
             }
 
             for(let j = 0; j <= rows.length; j++) {
-                rows[j].style.order = rand(0, rows.length * 10)
-                rows[j].style.display = 'none'
-                console.log(rows[j])
-                rows[rand(0, rows.length)].style.display = 'flex'
-                rows[rand(0, rows.length)].style.display = 'flex'
+                rows[j].style.order = rand(1, 99)
+                //rows[j].style.display = 'none'
+
+                // rows[0].style.display = 'flex'
+                // rows[1].style.display = 'flex'
             }
 
             for(let i = 0; i <= len; i++) {
-                items[i].style.display = 'none'
                 items[i].style.order = rand(0, len)
                 
                 showMoreBtn.onclick =  function() {
