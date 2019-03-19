@@ -412,7 +412,7 @@ a {
     text-align: center;
     color: #0d3d8e; }
   .points .card-wrapper {
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; }
@@ -453,6 +453,18 @@ a {
           cursor: pointer; }
           .points .card-wrapper .card-item__address .show-btn:hover {
             background-color: #ffd324; }
+  .points #btn-show-more {
+    width: 295px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #f0c000;
+    cursor: pointer; }
+    .points #btn-show-more:hover {
+      background-color: #ffd324; }
 
 .types {
   height: 670px;

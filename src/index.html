@@ -122,7 +122,7 @@
                             <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
-                    <div class="card-item hidden">
+                    <div class="card-item">
                         <div class="card-item__photo"></div>
                         <div class="card-item__address">
                             <p class="org">Торговый центр</p>
@@ -133,7 +133,7 @@
                             <div class="show-btn">Показать на карте</div>
                         </div>
                     </div>
-                    <div class="card-item hidden">
+                    <div class="card-item">
                         <div class="card-item__photo"></div>
                         <div class="card-item__address">
                             <p class="org">Торговый центр</p>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="btn-show">SHOW</div>
+                <div id="btn-show-more">Показать еще</div>
             </div>
         </div>
 
@@ -214,25 +214,38 @@
 
     <script>
         window.onload = function() {
-            let flag = true;
-            const items = document.getElementsByClassName('hidden')
-            document.getElementById('btn-show').onclick = function() { showItems() }
+            const showMoreBtn = document.getElementById('btn-show-more')
+            const items = document.getElementsByClassName('card-item')
+            const len = items.length 
+            let item
+            
+            let rand = (min, max) => {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
 
-            function showItems() {
-                for(let i = 0; i <= items.length; i++) {
-                    if(flag) {
-                        items[i].style.display = 'none'
-                        flag = false
-                        console.log(flag)
-                    }
-                    else {
-                        items[i].style.display = 'block'
-                        flag = true
-                        console.log(flag)
+            for(let i = 0; i <= len; i++) {
+                item = items[i]
+                item.style.display = 'none'
+                item.style.order = rand(0, len)
+
+                for(let j = 0; j < 4; j++) {
+                    items[j].style.display = 'block'
+                }
+                
+                showMoreBtn.onclick =  function() {
+                    for(let i = 0; i <= len; i++) {
+                        if(items[i].style.display = 'none') {
+                            items[i].style.display = 'block'
+                            //this.innerHTML = 'Скрыть'
+                        }
+                        else {
+                            items[i].style.display = 'none'
+                            this.innerHTML = 'Показать еще'
+                        }
                     }
                 }
             }
-        }
+        }   
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
