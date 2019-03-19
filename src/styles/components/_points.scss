@@ -15,6 +15,7 @@
     }
 
     .card-wrapper {
+        width: auto;
         margin: 50px 0;
         display: flex;
         flex-wrap: wrap;
@@ -24,49 +25,89 @@
             justify-content: center;
         }
 
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+
+            @media (max-width: 325px) {
+                flex-direction: column
+            }
+        }
+
         .card-item {
             width: 280px;
             margin-bottom: 15px;
             margin-right: 15px;
 
-            @media (max-width: 768px) {
-                margin-right: 0;
+            @media (max-width: 600px) {
+                width: 190px;
+                margin-left: 2px;
+                margin-right: 2px;
+                margin-bottom: 5px;
             }
 
             &__photo {
                 height: 280px;
                 background-image: url('../../img/points/unicom.png');
+                background-position: center center;
                 background-size: cover;
+
+                @media (max-width: 600px) {
+                    height: 200px;
+                }
             }
 
             &__address {
                 padding: 25px 20px 20px 20px;
                 background-color: #0d3d8e;
+
+                @media (max-width: 600px) {
+                    //height: 220px;
+                }
                 
                 .org, .name {
                     @include semi-bold;
                     font-size: 1.1rem;
                     color: #fff;
+
+                    @media (max-width: 600px) {
+                        font-size: 0.72rem;
+                    }
                 }
 
                 .name {
                     margin-bottom: 25px;
+
+                    @media (max-width: 600px) {
+                        margin-bottom: 20px;
+                    }
                 }
 
                 .city, .street, .floor {
                     font-size: 0.8rem;
                     color: #fff;
+
+                    @media (max-width: 600px) {
+                        font-size: 0.55rem;
+                    }
                 }
 
                 .show-btn {
                     height: 50px;
                     line-height: 50px;
-                    margin-top: 20px;
+                    margin-top: 25px;
                     text-align: center;
                     @include bold;
                     font-size: .9em;
                     background-color: #f0c000;
                     cursor: pointer;
+
+                    @media (max-width: 600px) {
+                        height: 40px;
+                        line-height: 40px;
+                        margin-top: 20px;
+                        font-size: 0.7rem;
+                    }
 
                     &:hover {
                         background-color: lighten(#f0c000, 10%)
@@ -77,7 +118,7 @@
     }
 
     #btn-show-more {
-        width: 295px;
+        width: 280px;
         height: 50px;
         line-height: 50px;
         margin: 0 auto;
