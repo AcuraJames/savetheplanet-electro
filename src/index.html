@@ -218,44 +218,7 @@
         </div>
     </div>
 
-    <script>
-        window.onload = function() {
-            const showMoreBtn = document.getElementById('btn-show-more')
-            const items = document.getElementsByClassName('card-item')
-            const rows = document.getElementsByClassName('row')
-            const len = items.length 
-
-            let rand = (min, max) => {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
-
-            for(let j = 0; j <= rows.length; j++) {
-                rows[j].style.order = rand(1, 99)
-                //rows[j].style.display = 'none'
-
-                // rows[0].style.display = 'flex'
-                // rows[1].style.display = 'flex'
-            }
-
-            for(let i = 0; i <= len; i++) {
-                items[i].style.order = rand(0, len)
-                
-                showMoreBtn.onclick =  function() {
-                    for(let i = 0; i <= len; i++) {
-                        if(items[i].style.display = 'none') {
-                            items[i].style.display = 'block'
-                            //this.innerHTML = 'Скрыть'
-                            this.style.display = 'none'
-                        }
-                        else {
-                            items[i].style.display = 'none'
-                            this.innerHTML = 'Показать еще'
-                        }
-                    }
-                }
-            }
-        }   
-    </script>
+    <script src='./js/randomizer.js'></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script type="module">
