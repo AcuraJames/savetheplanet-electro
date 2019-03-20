@@ -25,7 +25,6 @@ window.onload = function() {
             if(rows[i].style.display = 'none') {
                 rows[i].style.display = 'flex'
                 //this.innerHTML = 'Скрыть'
-                console.log(this)
                 showMoreBtn.style.display = 'none'
             }
             else {
