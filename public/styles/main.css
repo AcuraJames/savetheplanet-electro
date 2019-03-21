@@ -438,12 +438,20 @@ a {
           margin-bottom: 5px; } }
       .points .card-wrapper .card-item__photo {
         height: 280px;
-        background-image: url("../../img/points/unicom.png");
+        background-image: url("../../img/points/default.png");
         background-position: center center;
         background-size: cover; }
         @media (max-width: 600px) {
           .points .card-wrapper .card-item__photo {
             height: 200px; } }
+      .points .card-wrapper .card-item .pe-bm {
+        background-image: url("../../img/points/pe_bm.jpg"); }
+      .points .card-wrapper .card-item .pe-aut {
+        background-image: url("../../img/points/pe_aut.jpeg"); }
+      .points .card-wrapper .card-item .unicom {
+        background-image: url("../../img/points/unicom.jpeg"); }
+      .points .card-wrapper .card-item .sinet {
+        background-image: url("../../img/points/sinet.jpg"); }
       .points .card-wrapper .card-item__address {
         padding: 25px 20px 20px 20px;
         background-color: #0d3d8e; }

@@ -48,13 +48,26 @@
 
             &__photo {
                 height: 280px;
-                background-image: url('../../img/points/unicom.png');
+                background-image: url('../../img/points/default.png');
                 background-position: center center;
                 background-size: cover;
 
                 @media (max-width: 600px) {
                     height: 200px;
                 }
+            }
+
+            .pe-bm {
+                background-image: url('../../img/points/pe_bm.jpg');
+            }
+            .pe-aut {
+                background-image: url('../../img/points/pe_aut.jpeg');
+            }
+            .unicom {
+                background-image: url('../../img/points/unicom.jpeg');
+            }
+            .sinet {
+                background-image: url('../../img/points/sinet.jpg');
             }
 
             &__address {

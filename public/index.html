@@ -80,7 +80,7 @@
                 <div class="card-wrapper">
                     <div class="row">
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo pe-bm"></div>
                             <div class="card-item__address">
                                 <p class="org">Магазин</p>
                                 <p class="name">«Планета электро»</p>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo pe-aut"></div>
                             <div class="card-item__address">
                                 <p class="org">Магазин</p>
                                 <p class="name">«Планета электро»</p>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="row">
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo unicom"></div>
                             <div class="card-item__address">
                                 <p class="org">Магазин</p>
                                 <p class="name">«Юником»</p>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo sinet"></div>
                             <div class="card-item__address">
                                 <p class="org">Офис группы компаний</p>
                                 <p class="name">«Синет»</p>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="row">
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo deley"></div>
                             <div class="card-item__address">
                                 <p class="org">Торговый центр</p>
                                 <p class="name">«Дэлэй»</p>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <div class="card-item">
-                            <div class="card-item__photo"></div>
+                            <div class="card-item__photo edem"></div>
                             <div class="card-item__address">
                                 <p class="org">Торговый центр</p>
                                 <p class="name">«Эдэм»</p>
@@ -218,44 +218,7 @@
         </div>
     </div>
 
-    <script>
-        window.onload = function() {
-            const showMoreBtn = document.getElementById('btn-show-more')
-            const items = document.getElementsByClassName('card-item')
-            const rows = document.getElementsByClassName('row')
-            const len = items.length 
-
-            let rand = (min, max) => {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
-
-            for(let j = 0; j <= rows.length; j++) {
-                rows[j].style.order = rand(1, 99)
-                //rows[j].style.display = 'none'
-
-                // rows[0].style.display = 'flex'
-                // rows[1].style.display = 'flex'
-            }
-
-            for(let i = 0; i <= len; i++) {
-                items[i].style.order = rand(0, len)
-                
-                showMoreBtn.onclick =  function() {
-                    for(let i = 0; i <= len; i++) {
-                        if(items[i].style.display = 'none') {
-                            items[i].style.display = 'block'
-                            //this.innerHTML = 'Скрыть'
-                            this.style.display = 'none'
-                        }
-                        else {
-                            items[i].style.display = 'none'
-                            this.innerHTML = 'Показать еще'
-                        }
-                    }
-                }
-            }
-        }   
-    </script>
+    <script src='./js/randomizer.js'></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script type="module">
