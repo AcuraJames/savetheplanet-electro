@@ -71,6 +71,7 @@
             }
 
             &__address {
+                display: block;
                 padding: 25px 20px 20px 20px;
                 background-color: #0d3d8e;
 
@@ -79,6 +80,7 @@
                 }
                 
                 .org, .name {
+                    display: block;
                     @include semi-bold;
                     font-size: 1.1rem;
                     color: #fff;
@@ -89,6 +91,7 @@
                 }
 
                 .name {
+                    display: block;
                     margin-bottom: 25px;
 
                     @media (max-width: 600px) {
@@ -97,6 +100,7 @@
                 }
 
                 .city, .street, .floor {
+                    display: block;
                     font-size: 0.8rem;
                     color: #fff;
 
