@@ -61,7 +61,7 @@ a {
   @media (max-width: 2560px) {
     .prlx {
       width: 2700px;
-      height: 1900px; } }
+      height: 1999px; } }
   @media (max-width: 1920px) {
     .prlx {
       width: 1920px;
@@ -80,21 +80,23 @@ a {
 
 .left-back {
   background-image: url("../../img/batteries/croped1920/left_back.png");
-  top: 200px;
+  top: -400px;
   left: 1000px; }
   @media (max-width: 2560px) {
     .left-back {
-      height: 1700px;
-      top: 100px;
-      left: 700px; } }
+      height: 1500px;
+      top: -300px;
+      left: 600px; } }
   @media (max-width: 1920px) {
     .left-back {
       height: 1000px;
+      top: 100px;
       left: 500px; } }
-  @media (max-width: 1920px) {
+  @media (max-width: 1366px) {
     .left-back {
       height: 800px;
-      left: 400px; } }
+      top: 80px;
+      left: 350px; } }
   @media (max-width: 1024px) {
     .left-back {
       height: 600px;
@@ -103,17 +105,17 @@ a {
 
 .left-middle {
   background-image: url("../../img/batteries/croped1920/left_middle.png");
-  top: 500px;
+  top: 0;
   left: 300px; }
   @media (max-width: 2560px) {
     .left-middle {
-      height: 1300px;
-      top: 300px; } }
+      height: 1300px; } }
   @media (max-width: 1920px) {
     .left-middle {
       height: 1000px;
-      left: 100px; } }
-  @media (max-width: 1920px) {
+      top: 300px;
+      left: 200px; } }
+  @media (max-width: 1366px) {
     .left-middle {
       top: 200px;
       left: 150px;
@@ -125,43 +127,50 @@ a {
 
 .left-front {
   background-image: url("../../img/batteries/croped1920/left_front.png");
-  top: -300px;
-  left: 100px; }
+  top: -800px;
+  left: 0; }
   @media (max-width: 2560px) {
     .left-front {
-      top: -250px;
-      left: -100px; } }
+      top: -550px; } }
   @media (max-width: 1920px) {
     .left-front {
-      top: -100px;
-      left: 0; } }
-  @media (max-width: 1920px) {
+      top: -50px;
+      left: -50px; } }
+  @media (max-width: 1366px) {
     .left-front {
-      top: 0;
-      left: 50px; } }
+      height: 1200px;
+      top: -50px;
+      left: -50px; } }
   @media (max-width: 1024px) {
     .left-front {
       height: 900px;
       top: -50px;
       left: -50px; } }
 
+.right-back {
+  background-image: url("../../img/batteries/croped1920/right_back.png");
+  top: 900px;
+  right: 0; }
+
 .right-middle {
   background-image: url("../../img/batteries/croped1920/right_middle.png");
-  top: 200px;
+  top: -350px;
   left: 150px; }
   @media (max-width: 2560px) {
     .right-middle {
       height: 1200px;
-      left: 0; } }
+      top: -100px;
+      left: 80px; } }
   @media (max-width: 1920px) {
     .right-middle {
       height: 1000px;
-      top: 100px;
-      left: 130px; } }
-  @media (max-width: 1920px) {
+      top: 250px;
+      left: 100px; } }
+  @media (max-width: 1366px) {
     .right-middle {
       height: 800px;
-      top: 150px; } }
+      top: 150px;
+      left: 90px; } }
   @media (max-width: 1024px) {
     .right-middle {
       height: 600px;
@@ -170,24 +179,29 @@ a {
 
 .right-front {
   background-image: url("../../img/batteries/croped1920/right_front.png");
-  top: -250px;
-  left: -100px; }
+  top: -700px;
+  left: 0; }
   @media (max-width: 2560px) {
     .right-front {
-      left: 200px; } }
-  @media (max-width: 1920px) {
-    .right-front {
-      top: -100px;
+      height: 1700px;
+      top: -400px;
       left: 0; } }
   @media (max-width: 1920px) {
     .right-front {
-      top: 0;
-      left: 50px; } }
+      width: 2300px;
+      top: -100px;
+      left: -200px;
+      transform: scale(0.8); } }
+  @media (max-width: 1366px) {
+    .right-front {
+      top: -350px;
+      left: -500px;
+      transform: scale(0.6); } }
   @media (max-width: 1024px) {
     .right-front {
-      width: 1100px;
-      top: 50px;
-      left: -60px; } }
+      top: -450px;
+      left: -600px;
+      transform: scale(0.5); } }
 
 .hero {
   max-width: 100%;
@@ -300,6 +314,12 @@ a {
         .hero .tagline .battery-static {
           top: 195px;
           transform: translateX(-50%); } }
+      @media (max-height: 670px) {
+        .hero .tagline .battery-static {
+          top: 250px; } }
+      @media (min-height: 882px) {
+        .hero .tagline .battery-static {
+          top: 355px; } }
   .hero .footer {
     font-weight: 600;
     height: 50px;
@@ -429,7 +449,8 @@ a {
     .points .card-wrapper .card-item {
       width: 280px;
       margin-bottom: 15px;
-      margin-right: 15px; }
+      margin-right: 7px;
+      margin-left: 7px; }
       @media (max-width: 600px) {
         .points .card-wrapper .card-item {
           width: 190px;
@@ -452,10 +473,14 @@ a {
         background-image: url("../../img/points/unicom.jpeg"); }
       .points .card-wrapper .card-item .sinet {
         background-image: url("../../img/points/sinet.jpg"); }
+      .points .card-wrapper .card-item .edem {
+        background-image: url("../../img/points/edem.jpg"); }
       .points .card-wrapper .card-item__address {
+        display: block;
         padding: 25px 20px 20px 20px;
         background-color: #0d3d8e; }
         .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
+          display: block;
           font-weight: 600;
           font-size: 1.1rem;
           color: #fff; }
@@ -463,11 +488,13 @@ a {
             .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
               font-size: 0.72rem; } }
         .points .card-wrapper .card-item__address .name {
+          display: block;
           margin-bottom: 25px; }
           @media (max-width: 600px) {
             .points .card-wrapper .card-item__address .name {
               margin-bottom: 20px; } }
         .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
+          display: block;
           font-size: 0.8rem;
           color: #fff; }
           @media (max-width: 600px) {
@@ -548,8 +575,14 @@ a {
     font-size: 2rem;
     color: #fff; }
   .insta .hashtag {
-    margin-top: 10px;
+    margin: 10px 0 50px 0;
     font-size: 1.3rem;
+    color: #fff; }
+  .insta .call2action {
+    display: block;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 872px;
     color: #fff; }
   .insta .card-wrapper_insta {
     margin-top: 50px;
@@ -558,7 +591,8 @@ a {
     justify-content: center; }
     .insta .card-wrapper_insta .card-item_insta {
       width: 280px;
-      margin-right: 15px;
+      margin-right: 7px;
+      margin-left: 7px;
       margin-bottom: 15px;
       text-align: left; }
       @media (max-width: 1180px) {
