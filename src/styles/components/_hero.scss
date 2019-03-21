@@ -149,6 +149,13 @@
             @media (min-height: 820px) {
                 
             }
+
+            @media (max-height: 670px) {
+                top: 250px;
+            }  
+            @media (min-height: 882px) {
+                top: 355px;
+            }    
         }
     }
 

@@ -314,6 +314,12 @@ a {
         .hero .tagline .battery-static {
           top: 195px;
           transform: translateX(-50%); } }
+      @media (max-height: 670px) {
+        .hero .tagline .battery-static {
+          top: 250px; } }
+      @media (min-height: 882px) {
+        .hero .tagline .battery-static {
+          top: 355px; } }
   .hero .footer {
     font-weight: 600;
     height: 50px;
@@ -443,7 +449,8 @@ a {
     .points .card-wrapper .card-item {
       width: 280px;
       margin-bottom: 15px;
-      margin-right: 15px; }
+      margin-right: 7px;
+      margin-left: 7px; }
       @media (max-width: 600px) {
         .points .card-wrapper .card-item {
           width: 190px;
@@ -466,6 +473,8 @@ a {
         background-image: url("../../img/points/unicom.jpeg"); }
       .points .card-wrapper .card-item .sinet {
         background-image: url("../../img/points/sinet.jpg"); }
+      .points .card-wrapper .card-item .edem {
+        background-image: url("../../img/points/edem.jpg"); }
       .points .card-wrapper .card-item__address {
         display: block;
         padding: 25px 20px 20px 20px;
