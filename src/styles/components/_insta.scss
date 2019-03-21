@@ -18,8 +18,13 @@
     .call2action {
         display: block;
         margin: auto;
+        padding: 0 20px;
         max-width: 872px;
         color: #fff;
+
+        @media (max-width: 768px) {
+
+        }
     }
 
     .card-wrapper_insta {
