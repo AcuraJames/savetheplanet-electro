@@ -41,10 +41,27 @@
             margin-left: 7px;
 
             @media (max-width: 600px) {
-                width: 190px;
+                width: 186px;
                 margin-left: 2px;
                 margin-right: 2px;
                 margin-bottom: 5px;
+            }
+
+            @media (max-width: 375px) {
+                margin-bottom: 2px;
+            }
+
+            &:nth-child(odd) {
+                @media (max-width: 375px) {
+                    margin-left: 0;
+                    margin-right: 1px;
+                }
+            }
+            &:nth-child(2n) {
+                @media (max-width: 375px) {
+                    margin-right: 0;
+                    margin-left: 1px;
+                }
             }
 
             &__photo {
@@ -59,7 +76,7 @@
             }
 
             .pe-bm {
-                background-image: url('../../img/points/pe_bm.jpg');
+                background-image: url('../../img/points/pe_bm.JPG');
             }
             .pe-aut {
                 background-image: url('../../img/points/pe_aut.jpeg');
@@ -68,7 +85,7 @@
                 background-image: url('../../img/points/unicom.jpeg');
             }
             .sinet {
-                background-image: url('../../img/points/sinet.jpg');
+                background-image: url('../../img/points/sinet.JPG');
             }
             .edem {
                 background-image: url('../../img/points/edem.jpg');
@@ -76,11 +93,12 @@
 
             &__address {
                 display: block;
+                position: relative;
                 padding: 25px 20px 20px 20px;
                 background-color: #0d3d8e;
 
                 @media (max-width: 600px) {
-                    //height: 220px;
+                    height: 200px;
                 }
                 
                 .org, .name {
@@ -90,7 +108,7 @@
                     color: #fff;
 
                     @media (max-width: 600px) {
-                        font-size: 0.72rem;
+                        font-size: 0.7rem;
                     }
                 }
 
@@ -109,7 +127,7 @@
                     color: #fff;
 
                     @media (max-width: 600px) {
-                        font-size: 0.55rem;
+                        font-size: 0.52rem;
                     }
                 }
 
@@ -124,10 +142,16 @@
                     cursor: pointer;
 
                     @media (max-width: 600px) {
+                        width: 150px;
                         height: 40px;
                         line-height: 40px;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
                         margin-top: 20px;
-                        font-size: 0.7rem;
+                        padding: 0 20px;
+                        font-size: 0.6rem;
                     }
 
                     &:hover {

@@ -132,12 +132,12 @@
             }
 
             @media (max-width: 415px) {
-                top: 280px;
+                top: 320px;
                 transform: translateX(-50%)
             }
 
             @media (max-width: 375px) {
-                top: 325px;
+                top: 355px;
                 transform: translateX(-50%)
             }
 
@@ -153,9 +153,7 @@
             @media (max-height: 670px) {
                 top: 250px;
             }  
-            @media (min-height: 882px) {
-                top: 355px;
-            }    
+              
         }
     }
 
@@ -164,7 +162,7 @@
         height: 50px;
         margin-top: 30px;
         font-size: 1rem;
-        color: #fff;
+        color: #ffffff;
     }
 }
 

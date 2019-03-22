@@ -57,7 +57,8 @@ a {
   left: 0; }
   @media (min-height: 1366px) {
     .prlx {
-      transform: translateY(25%); } }
+      -webkit-transform: translateY(25%);
+              transform: translateY(25%); } }
   @media (max-width: 2560px) {
     .prlx {
       width: 2700px;
@@ -191,17 +192,20 @@ a {
       width: 2300px;
       top: -100px;
       left: -200px;
-      transform: scale(0.8); } }
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8); } }
   @media (max-width: 1366px) {
     .right-front {
       top: -350px;
       left: -500px;
-      transform: scale(0.6); } }
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6); } }
   @media (max-width: 1024px) {
     .right-front {
       top: -450px;
       left: -600px;
-      transform: scale(0.5); } }
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5); } }
 
 .hero {
   max-width: 100%;
@@ -287,45 +291,49 @@ a {
           width: 75%;
           top: 400px;
           left: 50%;
-          transform: translateX(-51%); } }
+          -webkit-transform: translateX(-51%);
+                  transform: translateX(-51%); } }
       @media (max-width: 1024px) {
         .hero .tagline .battery-static {
           top: 600px;
           left: 50%;
-          transform: translateX(-51%); } }
+          -webkit-transform: translateX(-51%);
+                  transform: translateX(-51%); } }
       @media (max-width: 768px) {
         .hero .tagline .battery-static {
           top: 435px;
-          transform: translateX(-52%); } }
+          -webkit-transform: translateX(-52%);
+                  transform: translateX(-52%); } }
       @media (max-width: 460px) {
         .hero .tagline .battery-static {
           width: 85%;
           top: 325px;
-          transform: translateX(-50%); } }
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
       @media (max-width: 415px) {
         .hero .tagline .battery-static {
-          top: 280px;
-          transform: translateX(-50%); } }
+          top: 320px;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
       @media (max-width: 375px) {
         .hero .tagline .battery-static {
-          top: 325px;
-          transform: translateX(-50%); } }
+          top: 355px;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
       @media (max-width: 320px) {
         .hero .tagline .battery-static {
           top: 195px;
-          transform: translateX(-50%); } }
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
       @media (max-height: 670px) {
         .hero .tagline .battery-static {
           top: 250px; } }
-      @media (min-height: 882px) {
-        .hero .tagline .battery-static {
-          top: 355px; } }
   .hero .footer {
     font-weight: 600;
     height: 50px;
     margin-top: 30px;
     font-size: 1rem;
-    color: #fff; }
+    color: #ffffff; }
 
 .damage {
   max-width: 1180px;
@@ -384,7 +392,7 @@ a {
   z-index: 999; }
   @media (min-width: 1920px) {
     .infographic {
-      height: 1600px; } }
+      height: 1500px; } }
   @media (min-width: 3065px) {
     .infographic {
       height: 2460px; } }
@@ -453,10 +461,21 @@ a {
       margin-left: 7px; }
       @media (max-width: 600px) {
         .points .card-wrapper .card-item {
-          width: 190px;
+          width: 186px;
           margin-left: 2px;
           margin-right: 2px;
           margin-bottom: 5px; } }
+      @media (max-width: 375px) {
+        .points .card-wrapper .card-item {
+          margin-bottom: 2px; } }
+      @media (max-width: 375px) {
+        .points .card-wrapper .card-item:nth-child(odd) {
+          margin-left: 0;
+          margin-right: 1px; } }
+      @media (max-width: 375px) {
+        .points .card-wrapper .card-item:nth-child(2n) {
+          margin-right: 0;
+          margin-left: 1px; } }
       .points .card-wrapper .card-item__photo {
         height: 280px;
         background-image: url("../../img/points/default.png");
@@ -466,19 +485,23 @@ a {
           .points .card-wrapper .card-item__photo {
             height: 200px; } }
       .points .card-wrapper .card-item .pe-bm {
-        background-image: url("../../img/points/pe_bm.jpg"); }
+        background-image: url("../../img/points/pe_bm.JPG"); }
       .points .card-wrapper .card-item .pe-aut {
         background-image: url("../../img/points/pe_aut.jpeg"); }
       .points .card-wrapper .card-item .unicom {
         background-image: url("../../img/points/unicom.jpeg"); }
       .points .card-wrapper .card-item .sinet {
-        background-image: url("../../img/points/sinet.jpg"); }
+        background-image: url("../../img/points/sinet.JPG"); }
       .points .card-wrapper .card-item .edem {
         background-image: url("../../img/points/edem.jpg"); }
       .points .card-wrapper .card-item__address {
         display: block;
+        position: relative;
         padding: 25px 20px 20px 20px;
         background-color: #0d3d8e; }
+        @media (max-width: 600px) {
+          .points .card-wrapper .card-item__address {
+            height: 200px; } }
         .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
           display: block;
           font-weight: 600;
@@ -486,7 +509,7 @@ a {
           color: #fff; }
           @media (max-width: 600px) {
             .points .card-wrapper .card-item__address .org, .points .card-wrapper .card-item__address .name {
-              font-size: 0.72rem; } }
+              font-size: 0.7rem; } }
         .points .card-wrapper .card-item__address .name {
           display: block;
           margin-bottom: 25px; }
@@ -499,7 +522,7 @@ a {
           color: #fff; }
           @media (max-width: 600px) {
             .points .card-wrapper .card-item__address .city, .points .card-wrapper .card-item__address .street, .points .card-wrapper .card-item__address .floor {
-              font-size: 0.55rem; } }
+              font-size: 0.52rem; } }
         .points .card-wrapper .card-item__address .show-btn {
           height: 50px;
           line-height: 50px;
@@ -511,10 +534,17 @@ a {
           cursor: pointer; }
           @media (max-width: 600px) {
             .points .card-wrapper .card-item__address .show-btn {
+              width: 150px;
               height: 40px;
               line-height: 40px;
+              position: absolute;
+              bottom: 20px;
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+                      transform: translateX(-50%);
               margin-top: 20px;
-              font-size: 0.7rem; } }
+              padding: 0 20px;
+              font-size: 0.6rem; } }
           .points .card-wrapper .card-item__address .show-btn:hover {
             background-color: #ffd324; }
   .points #btn-show-more {
