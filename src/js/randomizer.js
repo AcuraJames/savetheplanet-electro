@@ -1,6 +1,5 @@
-window.onload = function() {
-    const showMoreBtn = document.getElementById('btn-show-more')
-    const items = document.getElementsByClassName('card-item')
+window.onload = () => {
+    const showMoreBtn = document.getElementById('show-more-btn')
     let rows = document.getElementsByClassName('row')
     let order = []
     
@@ -19,22 +18,18 @@ window.onload = function() {
             if(row.style.order == order[0] || row.style.order == order[1]) 
                 row.style.display = 'flex'
             else row.style.display = 'none'
+
+            let children = row.children
+            children = [].slice.call(children)
+            children.forEach(item => item.style.order = rand(1, 9))
         })
 
         showMoreBtn.addEventListener('click', () => {
             if(rows[i].style.display = 'none') {
                 rows[i].style.display = 'flex'
-                //this.innerHTML = 'Скрыть'
+                //showMoreBtn.innerHTML = 'Скрыть'
                 showMoreBtn.style.display = 'none'
-            }
-            else {
-                rows[i].style.display = 'none'
-                this.innerHTML = 'Показать еще'
             }
         })
     }
-    
-    // for(let j = 0; j <= items.length ; j++) {
-    //     items[j].style.order = rand(1, 9)      
-    // }
 }   

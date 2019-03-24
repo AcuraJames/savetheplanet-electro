@@ -113,16 +113,13 @@
             @media (max-width: 1180px) {
                 width: 75%;
                 top: 20px;
-                //transform: translateX(-51%)
             }
 
-            @media (max-width: 1024px) {
-                //top: 600px;
+            @media (max-width: 1024px) {                
                 transform: translateX(-51%)
             }
 
             @media (max-width: 768px) {
-                //top: 435px;
                 transform: translateX(-52%)
             }
 
@@ -131,29 +128,6 @@
                 top: 10px;
                 transform: translateX(-50%)
             }
-
-            @media (max-width: 415px) {
-                //top: 320px;
-                transform: translateX(-50%)
-            }
-
-            @media (max-width: 375px) {
-                //top: 355px;
-                transform: translateX(-50%)
-            }
-
-            @media (max-width: 320px) {
-                //top: 195px;
-                transform: translateX(-50%)
-            }
-
-            @media (min-height: 820px) {
-                
-            }
-
-            @media (max-height: 670px) {
-                //top: 250px;
-            }  
         }
     }
 

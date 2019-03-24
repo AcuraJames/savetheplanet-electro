@@ -315,18 +315,6 @@ a {
           top: 10px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
-      @media (max-width: 415px) {
-        .hero .tagline .battery-static {
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
-      @media (max-width: 375px) {
-        .hero .tagline .battery-static {
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
-      @media (max-width: 320px) {
-        .hero .tagline .battery-static {
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
   .hero .footer {
     font-weight: 600;
     height: 50px;
@@ -391,7 +379,16 @@ a {
   z-index: 999; }
   @media (min-width: 1920px) {
     .infographic {
-      height: 1500px; } }
+      height: 1400px; } }
+  @media (min-width: 1975px) {
+    .infographic {
+      height: 1600px; } }
+  @media (min-width: 2270px) {
+    .infographic {
+      height: 1800px; } }
+  @media (min-width: 2540PX) {
+    .infographic {
+      height: 2100px; } }
   @media (min-width: 3065px) {
     .infographic {
       height: 2460px; } }
@@ -546,7 +543,7 @@ a {
               font-size: 0.6rem; } }
           .points .card-wrapper .card-item__address .show-btn:hover {
             background-color: #ffd324; }
-  .points #btn-show-more {
+  .points #show-more-btn {
     width: 280px;
     height: 50px;
     line-height: 50px;
@@ -556,7 +553,7 @@ a {
     font-size: 1em;
     background-color: #f0c000;
     cursor: pointer; }
-    .points #btn-show-more:hover {
+    .points #show-more-btn:hover {
       background-color: #ffd324; }
 
 .types {
