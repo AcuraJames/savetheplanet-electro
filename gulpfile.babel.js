@@ -12,17 +12,17 @@ gulp.task('styles', () => {
     return gulp.src('src/styles/main.scss')
         .pipe(sass())
         .pipe(autoprefixer())
-        .pipe(rev())
+        //.pipe(rev())
         .pipe(gulp.dest('public/styles'))
-        .pipe(rev.manifest('css.json'))
-        .pipe(gulp.dest('manifest'))
+        //.pipe(rev.manifest('css.json'))
+        //.pipe(gulp.dest('manifest'))
 })
 
 gulp.task('index', () => {
     return gulp.src('src/index.html')
-        .pipe(revReplace({
-            manifest: gulp.src('manifest/css.json')
-        }))
+        // .pipe(revReplace({
+        //     manifest: gulp.src('manifest/css.json')
+        // }))
         .pipe(gulp.dest('public'))
 })
 

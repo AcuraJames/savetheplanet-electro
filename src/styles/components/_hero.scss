@@ -67,6 +67,8 @@
         }
 
         &__thick {
+            //display: block;
+            position: relative;
             @include bold;
             font-size: 7rem;
             color: #a8c000;
@@ -103,46 +105,45 @@
 
         .battery-static {
             position: absolute;
-            top: 375px;
-            left: -50px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 1;
 
             @media (max-width: 1180px) {
                 width: 75%;
-                top: 400px;
-                left: 50%;
-                transform: translateX(-51%)
+                top: 20px;
+                //transform: translateX(-51%)
             }
 
             @media (max-width: 1024px) {
-                top: 600px;
-                left: 50%;
+                //top: 600px;
                 transform: translateX(-51%)
             }
 
             @media (max-width: 768px) {
-                top: 435px;
+                //top: 435px;
                 transform: translateX(-52%)
             }
 
-            @media (max-width: 460px) {
+            @media (max-width: 544px) {
                 width: 85%;
-                top: 325px;
+                top: 10px;
                 transform: translateX(-50%)
             }
 
             @media (max-width: 415px) {
-                top: 320px;
+                //top: 320px;
                 transform: translateX(-50%)
             }
 
             @media (max-width: 375px) {
-                top: 355px;
+                //top: 355px;
                 transform: translateX(-50%)
             }
 
             @media (max-width: 320px) {
-                top: 195px;
+                //top: 195px;
                 transform: translateX(-50%)
             }
 
@@ -151,9 +152,8 @@
             }
 
             @media (max-height: 670px) {
-                top: 250px;
+                //top: 250px;
             }  
-              
         }
     }
 

@@ -59,6 +59,10 @@ a {
     .prlx {
       -webkit-transform: translateY(25%);
               transform: translateY(25%); } }
+  @media (min-height: 992px) {
+    .prlx {
+      -webkit-transform: translateY(25%);
+              transform: translateY(25%); } }
   @media (max-width: 2560px) {
     .prlx {
       width: 2700px;
@@ -75,6 +79,10 @@ a {
     .prlx {
       width: 1024px;
       height: 800px; } }
+  @media (max-width: 768px) {
+    .prlx {
+      width: 768px;
+      height: 500px; } }
   @media (max-width: 1020px) {
     .prlx {
       display: none; } }
@@ -257,6 +265,7 @@ a {
         .hero .tagline__thin {
           font-size: 1.3rem; } }
     .hero .tagline__thick {
+      position: relative;
       font-weight: 700;
       font-size: 7rem;
       color: #a8c000; }
@@ -283,51 +292,41 @@ a {
           font-size: 1.7rem; } }
     .hero .tagline .battery-static {
       position: absolute;
-      top: 375px;
-      left: -50px;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
       z-index: 1; }
       @media (max-width: 1180px) {
         .hero .tagline .battery-static {
           width: 75%;
-          top: 400px;
-          left: 50%;
-          -webkit-transform: translateX(-51%);
-                  transform: translateX(-51%); } }
+          top: 20px; } }
       @media (max-width: 1024px) {
         .hero .tagline .battery-static {
-          top: 600px;
-          left: 50%;
           -webkit-transform: translateX(-51%);
                   transform: translateX(-51%); } }
       @media (max-width: 768px) {
         .hero .tagline .battery-static {
-          top: 435px;
           -webkit-transform: translateX(-52%);
                   transform: translateX(-52%); } }
-      @media (max-width: 460px) {
+      @media (max-width: 544px) {
         .hero .tagline .battery-static {
           width: 85%;
-          top: 325px;
+          top: 10px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
       @media (max-width: 415px) {
         .hero .tagline .battery-static {
-          top: 320px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
       @media (max-width: 375px) {
         .hero .tagline .battery-static {
-          top: 355px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
       @media (max-width: 320px) {
         .hero .tagline .battery-static {
-          top: 195px;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
-      @media (max-height: 670px) {
-        .hero .tagline .battery-static {
-          top: 250px; } }
   .hero .footer {
     font-weight: 600;
     height: 50px;
