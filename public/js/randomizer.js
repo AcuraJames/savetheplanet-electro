@@ -1,5 +1,5 @@
 window.onload = () => {
-    const showMoreBtn = document.getElementById('show-more-btn')
+    let showMoreBtn = document.getElementById('show-more-btn')
     let rows = document.getElementsByClassName('row')
     let order = []
     
@@ -27,8 +27,8 @@ window.onload = () => {
         showMoreBtn.addEventListener('click', () => {
             if(rows[i].style.display = 'none') {
                 rows[i].style.display = 'flex'
-                //showMoreBtn.innerHTML = 'Скрыть'
                 showMoreBtn.style.display = 'none'
+                //showMoreBtn.innerHTML = 'Скрыть'
             }
         })
     }
