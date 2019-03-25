@@ -16,17 +16,17 @@ gulp.task('styles', () => {
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cssnano())
-        //.pipe(rev())
+        .pipe(rev())
         .pipe(gulp.dest('public/styles'))
-        //.pipe(rev.manifest('css.json'))
-        //.pipe(gulp.dest('manifest'))
+        .pipe(rev.manifest('css.json'))
+        .pipe(gulp.dest('manifest'))
 })
 
 gulp.task('index', () => {
     return gulp.src('src/index.html')
-        // .pipe(revReplace({
-        //     manifest: gulp.src('manifest/css.json')
-        // }))
+        .pipe(revReplace({
+            manifest: gulp.src('manifest/css.json')
+        }))
         .pipe(gulp.dest('public'))
 })
 
@@ -37,10 +37,10 @@ gulp.task('js', () => {
 
 gulp.task('img', () => {
     return gulp.src('src/img/**/*.*')
-    // .pipe(imagemin([
-    //     imagemin.jpegtran({progressive: true}),
-    //     imagemin.optipng({optimizationLevel: 5})
-    // ]))
+        .pipe(imagemin([
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5})
+        ]))
         .pipe(gulp.dest('public/img'))
 })
 
@@ -55,7 +55,8 @@ gulp.task('watch', () => {
 
 gulp.task('serve', () => {
     browserSync.init({
-        server: 'public'
+        server: 'public',
+        tunnel: true
     })
     browserSync.watch('public/**/*.*').on('change', browserSync.reload)
 })

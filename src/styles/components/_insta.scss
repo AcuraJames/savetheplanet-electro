@@ -33,10 +33,6 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        // @media (max-width: 1180px) {
-        //     justify-content: center;
-        // }
-
         .card-item_insta {
             width: 280px;
             margin-right: 7px;
@@ -56,7 +52,7 @@
 
             &__photo {
                 min-height: 280px;
-                background-image: url('../../img/points/unicom.png');
+                background-image: url('../../img/points/default.png');
                 background-size: cover;
             }
 
