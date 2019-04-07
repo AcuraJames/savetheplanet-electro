@@ -17,7 +17,7 @@ const browserSync = bsCreate()
 const prod = argv.env === 'production'
 
 gulp.task('clean', () => {
-    return del(['manifest', 'public/{styles, js}'])
+    return del(['manifest', 'public/styles'])
 })
 
 gulp.task('styles', () => {

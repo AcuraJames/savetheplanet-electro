@@ -1,0 +1,1 @@
+"use strict";var scene=document.getElementById("scene"),parallaxInstance=new Parallax(scene,{relativeInput:!0});
